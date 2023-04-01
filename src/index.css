@@ -1,21 +1,22 @@
 :root {
   --background_taupe: rgb(186, 161, 132);
+  background-color: rgb(186, 161, 132);
+
 }
 @import url("https://fonts.googleapis.com/css2?family=Alkatra&display=swap");
 
 .container {
-  width: var(--fluid-width);
-  max-width: var(--max-width);
+  /* width: var(--fluid-width);
+  max-width: var(--max-width); */
   margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content:center
 }
-/* .img {
-  width: 100%;
-  display: block;
-  object-fit: cover;
-} */
-.main-img {
+
+/* .main-img {
   max-width: 567px;
-}
+} */
 .logo {
   max-width: 600px;
 }
@@ -30,15 +31,21 @@
 .top-logo {
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
 }
 p {
   text-indent: 20px;
-  max-width: 700px;
-  margin: 0, 20px, 0, 20px;
+  max-width: 1000px;
+  /* margin: 0, 20px, 0, 20px; */
 }
 .info {
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 1294px;
+  height: 650px;
+  background-color: rgb(139, 114, 75);
+
 }
 .bs {
   color: rgb(78, 60, 6);
@@ -48,3 +55,76 @@ p {
 .kitty {
   max-width: 500px;
 }
+.paw{
+  max-width: 90px;
+  margin-left: 40%;
+}
+.main-img-container{
+max-width: 100%;
+min-width: 700px;
+height: auto;
+width: auto\9;
+width: 1294px;
+height: 650px;
+background-color: rgb(250, 235, 215);
+
+
+}
+.main-img {
+  width:1290px;
+  height: 650px;
+  max-width: 100%;
+  width: auto\9;
+  display: block;
+  object-fit: cover;
+  object-position: 75% 25%; 
+
+}
+.nav{
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 25px;
+  height: 100px;
+  background-color: rgb(186, 161, 132);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* margin-left:30%; */
+  padding: 0 30% 0 30%;
+  box-shadow: inset 0px 0px 20px 0px rgba(135, 114, 89,6);
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  height: 100px;
+  background-color: rgb(186, 161, 132);
+  display: flex;
+  flex-direction: row;
+  box-shadow: inset 0px 0px 20px 0px rgba(135, 114, 89,6);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/* footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  height: 100px;
+  background-color: rgb(56, 34, 8);
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: tan;
+} */

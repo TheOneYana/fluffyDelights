@@ -1,14 +1,18 @@
-import top from "../images/Top.png";
-import gold from "../images/Gold.png";
 
+import grey from "../images/Grey.png"
+import logo from "../images/Nose2.png";
+import main from "../images/main-temp.jpg"
+import paw from "../images/paw2.png"
 const Landing = () => {
   return (
     <main className="bkg">
       <div className="top-logo">
-        <img src={top} alt="FD logo" className="logo" />
+        <img src={logo} alt="FD logo" className="logo" />
       </div>
-      <nav>
+      <nav className="nav"><h4>Home</h4><h4>About</h4><h4>Gallery</h4><h4>Our CLients</h4><h4>Contact</h4></nav>
         <div className="container page">
+          <div className="main-img-container">
+            <img src={main} alt='girl with british shorthair cat' className="main-img"/></div>
           <div className="info">
             <span>
               <p>
@@ -30,13 +34,15 @@ const Landing = () => {
                 and receive the best possible care, ensuring that they are ready
                 to become cherished members of your family.
               </p>
+              <img src={paw} alt='cat paw' className="paw"/>
             </span>
-            <img src={gold} className="" />
           </div>
-          {/* <img src={logo} className="main-img" /> */}
         </div>
-      </nav>
+        <footer>
+        <h5>  © 2023 Designed and Developed by Uliana Sarkisova </h5>
+        </footer>
     </main>
+    
   );
 };
 
