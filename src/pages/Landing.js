@@ -1,12 +1,12 @@
 
-import grey from "../images/Grey.png"
-import logo from "../images/Nose2.png";
+import pawicon from "../images/paw-icon.png"
+import logo from "../images/NoseShadow.png";
 import main from "../images/main-temp.jpg"
 import paw from "../images/paw2.png"
 const Landing = () => {
   return (
     <main className="bkg">
-      <div className="top-logo">
+      <div className="top-logo-container">
         <img src={logo} alt="FD logo" className="logo" />
       </div>
       <nav className="nav"><h4>Home</h4><h4>About</h4><h4>Gallery</h4><h4>Our CLients</h4><h4>Contact</h4></nav>
@@ -37,6 +37,10 @@ const Landing = () => {
               <img src={paw} alt='cat paw' className="paw"/>
             </span>
           </div>
+        </div>
+        <div className="register">
+          <h3 className="registerorlogin">Would you like to Register or Login?</h3>
+          <button><img className='pawicon' alt='paw' src={pawicon}/>Register / Login<img className='pawicon' alt='paw'src={pawicon}/></button>
         </div>
         <footer>
         <h5>  © 2023 Designed and Developed by Uliana Sarkisova </h5>
