@@ -3,6 +3,7 @@
   background-color: rgb(186, 161, 132);
   --hover: rgb(245, 215, 179);
   --dark-beige: rgb(139, 106, 75);
+  --font: rgb(36, 20, 1);
 }
 *{
   margin: 0;

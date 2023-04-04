@@ -1,17 +1,18 @@
-import pawicon from "../images/paw-icon.png"
-import logo from "../images/NoseShadow.png";
-import main from "../images/main-temp.jpg"
-import paw from "../images/paw2.png"
-import Wrapper from '../wrappers/LandingWrap.js'
+import pawicon from "../images/paw-icon.png";
+import { Logo } from "../components";
+import { Link } from 'react-router-dom';
+import main from "../images/main-temp.jpg";
+import paw from "../images/paw2.png";
+import Wrapper from '../wrappers/LandingWrap.js';
 
 const Landing = () => {
   return (
     <Wrapper>
     <main className="bkg">
       <div className="top-logo-container">
-        <img src={logo} alt="FD logo" className="logo" />
+        <Logo/>
       </div>
-      <nav className="nav"><h4>Home</h4><h4>About</h4><h4>Gallery</h4><h4>Our CLients</h4><h4>Contact</h4></nav>
+      <nav className="nav"><Link to='/' className="h4">Home</Link><Link to='/About' className="h4">About</Link><Link to='/Gallery' className="h4">Gallery</Link><Link to='/OurClients' className="h4">Our CLients</Link><Link to='/Contact' className="h4">Contact</Link></nav>
         <div className="container page">
           <div className="main-img-container">
             <img src={main} alt='british shorthair cat' className="main-img"/></div>
@@ -42,7 +43,7 @@ const Landing = () => {
         </div>
         <div className="register">
           <h3 className="registerorlogin">Would you like to Register or Login?</h3>
-          <button><img className='pawicon' alt='paw' src={pawicon}/>Register / Login<img className='pawicon' alt='paw'src={pawicon}/></button>
+          <Link to='/Register' className="h4"><button><img className='pawicon' alt='paw' src={pawicon}/>Register / Login<img className='pawicon' alt='paw'src={pawicon}/></button></Link>
         </div>
         <footer>
         <h5>  © 2023 Designed and Developed by Uliana Sarkisova </h5>

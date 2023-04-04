@@ -15,7 +15,7 @@ const Wrapper = styled.div`
     background-color: var(--background_taupe);
     font-family: "Alkatra";
     font-size: 30px;
-    color: rgb(36, 20, 1);
+    color: var(--font);
   }
   .nav {
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -67,7 +67,16 @@ const Wrapper = styled.div`
     text-decoration: underline;
     text-decoration-color: rgb(36, 20, 1);
   }
-  h4:hover {
+  .h4:link {
+    color: var(--font);
+  }
+  .h4:visited {
+  color: var(--font);
+  }
+  .h4:active {
+  color: var(--font);
+  }
+  .h4:hover {
     color: var(--hover);
     cursor: pointer;
   }
