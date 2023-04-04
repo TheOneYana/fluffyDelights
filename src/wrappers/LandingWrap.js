@@ -184,6 +184,7 @@ footer{
 }
 .info{
     height: auto;
+    align-items: center;
 }
 .paw{
     margin-bottom: 15px;
