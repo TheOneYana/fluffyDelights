@@ -178,9 +178,21 @@ footer{
 }
 }
 
+@media(min-width: 699px) and (max-width:799px ){
+.logo {
+  max-width: 600px;
+}
+.info{
+    height: auto;
+}
+.paw{
+    margin-bottom: 15px;
+}
+}
+
 @media (min-width: 800px) and (max-width: 868px){
   .container {
-    flex-direction: row;
+    flex-direction: column;
   }
   .info {
     font-size: 19px;
@@ -188,10 +200,14 @@ footer{
     padding: 18px 10px 0px 14px;
     overflow: scroll;
     align-items: center;
+    height: auto;
   }
-  .paw{
-    margin-top: -10px;
-  }
+.paw{
+    margin-bottom: 15px;
+}
+.main-img{
+    width: 100%;
+}
 }
 
 @media (min-width: 869px) and (max-width:1004px){
@@ -205,6 +221,10 @@ footer{
     overflow: scroll;
     align-items: center;
   }
+  .paw{
+    margin-top: -8px;
+  }
+  
 }
 @media (min-width: 1005px) and (max-width: 1723px){
   .container {
@@ -214,6 +234,9 @@ footer{
   .info{
     font-size: 24px;
     align-items: center;
+  }
+  .paw{
+    margin-top: -2px;
   }
 }
 
