@@ -11,3 +11,49 @@
   box-sizing: border-box;
 }
 @import url("https://fonts.googleapis.com/css2?family=Alkatra&display=swap");
+
+.top-logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.logo {
+  max-width: 500px;
+}
+.bkg {
+  height: 100%;
+  width: 100vw;
+  background-color: var(--background_taupe);
+  font-family: "Alkatra";
+  font-size: 30px;
+  color: var(--font);
+}
+.nav {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 25px;
+  height: 90px;
+  background-color: var(--background_taupe);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: inset 0px 0px 20px 0px rgba(135, 114, 89, 6);
+}
+
+@media (min-width: 600px) and (max-width: 699px) {
+  .logo {
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 699px) and (max-width: 799px) {
+  .logo {
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 1724px) {
+  .nav {
+    padding: 0 30% 0 30%;
+  }}

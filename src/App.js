@@ -3,17 +3,17 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
- <BrowserRouter>
- <Routes>
- <Route path='/' element={<Landing/>}/>
- <Route path='About' element={<About/>}/>
- <Route path='OurClients' element={<OurClients/>}/>
- <Route path='Contact' element={<Contact/>}/>
- <Route path='Gallery' element={<Gallery/>}/>
- <Route path='*' element={<Error/>}/>
- <Route path='Register' element={<Register/>}/>
- </Routes>
- </BrowserRouter>
+  <BrowserRouter>
+  <Routes>
+  <Route path='/' element={<Landing/>}/>
+  <Route path='About' element={<About/>}/>
+  <Route path='OurClients' element={<OurClients/>}/>
+  <Route path='Contact' element={<Contact/>}/>
+  <Route path='Gallery' element={<Gallery/>}/>
+  <Route path='*' element={<Error/>}/>
+  <Route path='Register' element={<Register/>}/>
+  </Routes>
+  </BrowserRouter>
   );
 }
 

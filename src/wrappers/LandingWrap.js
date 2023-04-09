@@ -1,34 +1,6 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  .top-logo-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  .logo {
-    max-width: 500px;
-  }
-  .bkg {
-    height: 100%;
-    width: 100vw;
-    background-color: var(--background_taupe);
-    font-family: "Alkatra";
-    font-size: 30px;
-    color: var(--font);
-  }
-  .nav {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    font-size: 25px;
-    height: 90px;
-    background-color: var(--background_taupe);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    box-shadow: inset 0px 0px 20px 0px rgba(135, 114, 89, 6);
-  }
   .container {
     margin: 0 auto;
     display: flex;
@@ -92,7 +64,6 @@ const Wrapper = styled.div`
     align-items: center;
     font-size: 25px;
     margin-top: 20px;
-    padding-bottom: 90px;
   }
   .pawicon {
     width: 25px;
@@ -116,6 +87,20 @@ const Wrapper = styled.div`
   button:hover {
     color: rgb(41, 28, 23);
   }
+  .carousel {
+  margin: 15px 0 70px 0px;
+  height: 200px;
+
+
+  }
+
+  .carousel-image {
+    border-radius: 40px;
+    width: 250px;
+    height:200px;
+    object-fit: cover;
+}
+
   footer {
     display: flex;
     justify-content: center;
@@ -145,6 +130,11 @@ const Wrapper = styled.div`
     .paw {
       margin-bottom: 15px;
     }
+    .carousel{
+
+      margin: 15px 0 70px 55px;
+  
+    }
   }
 
   @media (min-width: 699px) and (max-width: 799px) {
@@ -158,6 +148,10 @@ const Wrapper = styled.div`
     .paw {
       margin-bottom: 15px;
     }
+    .carousel{
+      margin: 15px 0 70px 90px;
+    }
+   
   }
 
   @media (min-width: 800px) and (max-width: 868px) {
@@ -178,6 +172,10 @@ const Wrapper = styled.div`
     .main-img {
       width: 100%;
     }
+    .carousel{
+      margin: 15px 0 70px 10px;
+    }
+   
   }
 
   @media (min-width: 869px) and (max-width: 1004px) {
@@ -194,6 +192,17 @@ const Wrapper = styled.div`
     .paw {
       margin-top: -8px;
     }
+    .carousel {
+      margin: 15px 0 70px 30px;
+  height: 270px;
+  }
+
+  .carousel-image {
+    border-radius: 40px;
+    width: 250px;
+    height:270px;
+    object-fit: cover;
+}
   }
   @media (min-width: 1005px) and (max-width: 1723px) {
     .container {
@@ -205,6 +214,32 @@ const Wrapper = styled.div`
     }
     .paw {
       margin-top: -2px;
+    }
+    .carousel {
+      margin: 15px 0 70px 10px;
+  height: 270px;
+  }
+
+  .carousel-image {
+    border-radius: 40px;
+    width: 250px;
+    height:270px;
+    object-fit: cover;
+}
+  }
+  @media (min-width: 1190px) and (max-width: 1350px){
+    .carousel{
+      margin: 15px 0 70px 55px;
+    }
+  }
+  @media (min-width: 1351px) and (max-width: 1600px){
+    .carousel{
+      margin: 15px 0 70px 50px;
+    }
+  }
+  @media (min-width: 1601px) and (max-width: 1723px){
+    .carousel{
+      margin: 15px 0 70px 60px;
     }
   }
   @media (min-width: 1724px) {
@@ -220,12 +255,12 @@ const Wrapper = styled.div`
       height: auto;
       width: auto;
       width: 1294px;
-      height: 650px;
+      height: 580px;
       background-color: var(--background_taupe);
     }
     .main-img {
       width: 1290px;
-      height: 650px;
+      height: 580px;
       max-width: 100%;
       display: block;
       object-fit: cover;
@@ -237,12 +272,15 @@ const Wrapper = styled.div`
       justify-content: center;
       align-items: center;
       width: 1294px;
-      height: 650px;
+      height: 580px;
       overflow: auto;
     }
     .paw {
       max-width: 90px;
       margin-left: 40%;
+    }
+    .carousel{
+      margin: 15px 0 70px 70px;
     }
     footer {
       height: 50px;
