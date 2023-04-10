@@ -1,5 +1,4 @@
 import pawicon from "../images/paw-icon.png";
-import { Logo } from "../components";
 import { Link } from 'react-router-dom';
 import main from "../images/main-temp.jpg";
 import paw from "../images/paw2.png";
@@ -7,7 +6,9 @@ import Wrapper from '../wrappers/LandingWrap.js';
 // import Carousel from 'react-grid-carousel'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import {mommy, daddy, potato, potato1, potato2, potato3, fluff, three, four, five, six, eight, cat,cat1,cat2,cat3,cat4,cat5,cat6,cat7,cat8,cat9,cat10,cat11,cat12,cat13,cat14,cat15,cat16,cat17,cat18,cat19} from '../images/potatoes'
+import {mommy, daddy, potato, potato1, potato2, potato3, fluff, three, four, five, six, eight, cat,cat1,cat2,cat3,cat4,cat5,cat6,cat7,cat8,cat9,cat10,cat11,cat12,cat13,cat14,cat15,cat16,cat17,cat18,cat19} from '../images/potatoes';
+import { Error, Register, About, Gallery, OurClients, Contact} from "./index.js"
+
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
@@ -51,11 +52,7 @@ const Landing = () => {
   return (
     <Wrapper>
     <main className="bkg">
-      <div className="top-logo-container">
-        <Logo/>
-      </div>
-      <nav className="nav"><Link to='/' className="h4">Home</Link><Link to='/About' className="h4">About</Link><Link to='/Gallery' className="h4">Gallery</Link><Link to='/OurClients' className="h4">Our CLients</Link><Link to='/Contact' className="h4">Contact</Link></nav>
-        <div className="container page">
+    <div className="container page">
           <div className="main-img-container">
             <img src={main} alt='british shorthair cat' className="main-img"/></div>
           <div className="info">
@@ -125,10 +122,7 @@ const Landing = () => {
           </Carousel>
           </div>
         </div>
-        <footer>
-        <h5>  © 2023 Designed and Developed by Uliana Sarkisova </h5>
-        </footer>
-    </main>
+        </main>
     </Wrapper>
     
   );

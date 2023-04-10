@@ -1,3 +1,3 @@
-import Logo from './Logo';
+import Logo from './Header';
 
 export {Logo};
