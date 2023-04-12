@@ -40,6 +40,39 @@
   align-items: center;
   box-shadow: inset 0px 0px 20px 0px rgba(135, 114, 89, 6);
 }
+.kittenImg{
+  width: 320px;
+  min-height: 352px;
+  object-fit: cover;
+  margin: 10px 0 10px 0;
+}
+.kittensCrud{
+  position: absolute;
+  z-index: 2;
+  padding: 45px 0 45px 0;
+  text-align: center;
+  width: 100%;
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 0fr);
+  grid-template-rows: repeat(4, 0fr);
+  gap: 20px 20px;
+  justify-content: center;
+  /* overflow: hidden;  */
+  z-index: 0;
+
+}
+.grid-item {
+  border: 1px solid rgb(183, 117, 170);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 320px;
+  box-shadow: 5px 5px 5px rgb(160, 154, 162); 
+  margin: 40px 0 150px 0;
+  }
 
 @media (min-width: 600px) and (max-width: 699px) {
   .logo {

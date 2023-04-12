@@ -7,7 +7,6 @@ import Wrapper from '../wrappers/LandingWrap.js';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import {mommy, daddy, potato, potato1, potato2, potato3, fluff, three, four, five, six, eight, cat,cat1,cat2,cat3,cat4,cat5,cat6,cat7,cat8,cat9,cat10,cat11,cat12,cat13,cat14,cat15,cat16,cat17,cat18,cat19} from '../images/potatoes';
-import { Error, Register, About, Gallery, OurClients, Contact} from "./index.js"
 
 const responsive = {
   superLargeDesktop: {
