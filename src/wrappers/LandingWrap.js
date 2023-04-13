@@ -2,15 +2,15 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
   .container {
+    min-width: 375px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   .main-img-container {
-    min-width: 500px;
+    min-width: 375px;
     height: auto;
-    width: auto;
     background-color: var(--background_taupe);
   }
   .main-img {
@@ -25,8 +25,8 @@ const Wrapper = styled.div`
     font-size: 22.2px;
     display: flex;
     justify-content: center;
-    min-width: 500px;
-    height: 500px;
+    min-width: 375px;
+    height: auto;
     background-color: var(--dark-beige);
     padding: 18px 10px 0px 14px;
   }
@@ -34,7 +34,7 @@ const Wrapper = styled.div`
     text-indent: 20px;
     max-width: 900px;
   }
-  .bs {
+  .bs, button {
     color: rgb(74, 56, 39);
     text-decoration: underline;
     text-decoration-color: rgb(36, 20, 1);
@@ -65,6 +65,7 @@ const Wrapper = styled.div`
     font-size: 25px;
     margin-top: 20px;
   }
+
   .pawicon {
     width: 25px;
     margin: -4px 5px 0 5px;
@@ -83,6 +84,7 @@ const Wrapper = styled.div`
     margin-top: 15px;
     padding: 2px;
     cursor: pointer;
+    text-decoration-color: var(--font);
   }
   button:hover {
     color: rgb(41, 28, 23);
@@ -118,7 +120,12 @@ const Wrapper = styled.div`
     bottom: 0;
     width: 100%;
   }
-
+@media (min-width: 480px) and (max-width: 599px) {
+  .info {
+      height: auto;
+      align-items: center;
+    }
+}
   @media (min-width: 600px) and (max-width: 699px) {
     .logo {
       max-width: 600px;
@@ -188,6 +195,7 @@ const Wrapper = styled.div`
       padding: 18px 10px 0px 14px;
       overflow: scroll;
       align-items: center;
+      height: 500px;
     }
     .paw {
       margin-top: -8px;
@@ -211,6 +219,7 @@ const Wrapper = styled.div`
     .info {
       font-size: 24px;
       align-items: center;
+      height: 500px;
     }
     .paw {
       margin-top: -2px;
@@ -231,21 +240,28 @@ const Wrapper = styled.div`
     .carousel{
       margin: 15px 0 70px 55px;
     }
+    .info{
+      height: 500px;
+    }
   }
   @media (min-width: 1351px) and (max-width: 1600px){
     .carousel{
       margin: 15px 0 70px 50px;
+    }
+    .info{
+      height: 500px;
     }
   }
   @media (min-width: 1601px) and (max-width: 1723px){
     .carousel{
       margin: 15px 0 70px 60px;
     }
+    .info{
+     height: 500px;
+    }
   }
   @media (min-width: 1724px) {
-    .nav {
-      padding: 0 30% 0 30%;
-    }
+
     .container {
       flex-direction: row;
     }
@@ -274,6 +290,7 @@ const Wrapper = styled.div`
       width: 1294px;
       height: 580px;
       overflow: auto;
+
     }
     .paw {
       max-width: 90px;

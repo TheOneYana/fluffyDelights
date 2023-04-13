@@ -44,7 +44,7 @@ const responsive = {
   },
   mobile2: {
     breakpoint: { max: 499, min: 0 },
-    items: 1
+    items: 2
   }
 };
 const Landing = () => {
@@ -81,7 +81,7 @@ const Landing = () => {
         </div>
         <div className="register">
           <h3 className="registerorlogin">Would you like to Register or Login?</h3>
-          <Link to='/Register' className="h4"><button><img className='pawicon' alt='paw' src={pawicon}/>Register / Login<img className='pawicon' alt='paw'src={pawicon}/></button></Link>
+          <Link to='/Register' className="button"><button><img className='pawicon' alt='paw' src={pawicon}/>Register / Login<img className='pawicon' alt='paw'src={pawicon}/></button></Link>
         </div>
         <div className="carousel-container">
           <div className="carousel">
