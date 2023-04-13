@@ -16,9 +16,11 @@
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+
 }
 .logo {
-  max-width: 500px;
+  min-width: 375px;
+  max-width: 600px;
 }
 .bkg {
   height: 100%;
@@ -31,14 +33,22 @@
 .nav {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  font-size: 25px;
-  height: 90px;
+  font-size: 22px;
+  min-height: 90px;
   background-color: var(--background_taupe);
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(3, 0fr);
+  grid-template-rows: repeat(2, 0fr);
+  gap: 10px 0px;
   justify-content: space-around;
   align-items: center;
   box-shadow: inset 0px 0px 20px 0px rgba(135, 114, 89, 6);
+  padding: 10px 0 10px 0;
+  min-width: 375px;
+}
+.h4{
+max-width: 120px;
+
 }
 .kittenImg{
   width: 320px;
@@ -78,15 +88,39 @@
   .logo {
     max-width: 600px;
   }
+  .nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 
 @media (min-width: 699px) and (max-width: 799px) {
   .logo {
     max-width: 600px;
   }
+  .nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+@media (min-width: 800px) and (max-width: 1717px) {
+  .nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 
-@media (min-width: 1724px) {
+@media (min-width: 1718px) {
   .nav {
     padding: 0 30% 0 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
   }}
