@@ -2,7 +2,6 @@ import { createSlice, createAsyncThunk} from '@reduxjs/toolkit';
 import cats from '../../cats';
 
 const catsArr = [...cats];
-const length = catsArr.length;
 
 const initialState = {
     isLoading: true,

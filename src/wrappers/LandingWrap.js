@@ -85,7 +85,6 @@ const Wrapper = styled.div`
     padding: 2px;
     cursor: pointer;
     text-decoration-color: var(--font);
-    text-decoration: none;
   }
   button:hover {
     color: rgb(41, 28, 23);
