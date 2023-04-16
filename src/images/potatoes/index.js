@@ -44,7 +44,6 @@ import c10 from './c10.jpg';
 import c11 from './c11.jpg';
 import c12 from './c12.jpg';
 import c13 from './c13.jpg';
-import c14 from './c14.jpg';
 import c15 from './c15.jpg';
 import c16 from './c16.jpg';
 import c17 from './c17.jpg';
@@ -74,4 +73,4 @@ import c40 from './c40.JPG';
 import c41 from './c41.jpg';
 
 
-export {mommy, daddy, potato, potato1, potato2, potato3, fluff, three, four, five, six, eight, cat,cat1,cat2,cat3,cat4,cat5,cat6,cat7,cat8,cat9,cat10,cat11,cat12,cat13,cat14,cat15,cat16,cat17,cat18,cat19,c,c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,c11,c12,c13,c14,c15,c16,c17,c18,c19,c20,c21,c22,c23,c24,c25,c26,c27,c28,c29,c30,c31,c32,c33,c34,c35,c36,c37,c38,c39,c40,c41};
+export {mommy, daddy, potato, potato1, potato2, potato3, fluff, three, four, five, six, eight, cat,cat1,cat2,cat3,cat4,cat5,cat6,cat7,cat8,cat9,cat10,cat11,cat12,cat13,cat14,cat15,cat16,cat17,cat18,cat19,c,c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,c11,c12,c13,c15,c16,c17,c18,c19,c20,c21,c22,c23,c24,c25,c26,c27,c28,c29,c30,c31,c32,c33,c34,c35,c36,c37,c38,c39,c40,c41};
