@@ -36,7 +36,7 @@ const Wrapper = styled.div`
   }
   .bs, button {
     color: rgb(74, 56, 39);
-    text-decoration: underline;
+    text-decoration: none;
     text-decoration-color: rgb(36, 20, 1);
   }
   .h4:link {
@@ -85,20 +85,22 @@ const Wrapper = styled.div`
     padding: 2px;
     cursor: pointer;
     text-decoration-color: var(--font);
+    text-decoration: none;
   }
   button:hover {
     color: rgb(41, 28, 23);
   }
+  .button:link{
+    text-decoration: none;
+  }
   .carousel {
-  margin: 15px 0 70px 0px;
+  margin: 15px 0 70px 19px;
   height: 200px;
-
-
   }
 
   .carousel-image {
     border-radius: 40px;
-    width: 250px;
+    width: 180px;
     height:200px;
     object-fit: cover;
 }
@@ -125,6 +127,9 @@ const Wrapper = styled.div`
       height: auto;
       align-items: center;
     }
+    .carousel-image {
+    width: 220px;
+}
 }
   @media (min-width: 600px) and (max-width: 699px) {
     .logo {
@@ -137,6 +142,10 @@ const Wrapper = styled.div`
     .paw {
       margin-bottom: 15px;
     }
+
+  .carousel-image {
+    width: 250px;
+}
     .carousel{
 
       margin: 15px 0 70px 55px;
@@ -158,12 +167,16 @@ const Wrapper = styled.div`
     .carousel{
       margin: 15px 0 70px 90px;
     }
+    .carousel-image {
+    width: 250px;
+}
    
   }
 
   @media (min-width: 800px) and (max-width: 868px) {
     .container {
       flex-direction: column;
+     
     }
     .info {
       font-size: 19px;
@@ -182,6 +195,9 @@ const Wrapper = styled.div`
     .carousel{
       margin: 15px 0 70px 10px;
     }
+    .carousel-image {
+    width: 250px;
+}
    
   }
 
@@ -191,7 +207,7 @@ const Wrapper = styled.div`
     }
     .info {
       font-size: 20px;
-      min-width: 350px;
+      width: 800px;
       padding: 18px 10px 0px 14px;
       overflow: scroll;
       align-items: center;
@@ -220,6 +236,7 @@ const Wrapper = styled.div`
       font-size: 24px;
       align-items: center;
       height: 500px;
+      width:800px
     }
     .paw {
       margin-top: -2px;
@@ -269,7 +286,6 @@ const Wrapper = styled.div`
       max-width: 100%;
       min-width: 700px;
       height: auto;
-      width: auto;
       width: 1294px;
       height: 580px;
       background-color: var(--background_taupe);
@@ -299,6 +315,9 @@ const Wrapper = styled.div`
     .carousel{
       margin: 15px 0 70px 70px;
     }
+    .carousel-image {
+    width: 250px;
+}
     footer {
       height: 50px;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
