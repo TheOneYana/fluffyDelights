@@ -47,7 +47,33 @@ const CrudWrap = styled.div`
     text-decoration-color: var(--font);
 }
 .crudBtn:hover{
-    color: var(--hover)
+    color: var(--hover);
+    cursor: pointer;
+}
+p{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+.nextPrevBtn{
+  color: var(--font);
+    height: 50px;
+    width: auto;
+    background-color: var(  --background_taupe);
+    border: 1px solid var(--dark-beige);
+    box-shadow: inset 0px 0px 4px 0px rgba(50, 29, 0, 1);
+    border-radius: 10px;
+    margin-top: 15px;
+    padding: 10px;
+    margin: 7px;
+    cursor: pointer;
+    text-decoration-color: var(--font);
+}
+.nextPrevBtn:hover{
+    color: var(--hover);
+    cursor: pointer;
+    
 }
 `
 export default CrudWrap;
