@@ -1,5 +1,5 @@
 import React from 'react';
-import { shooCats} from '../features/crud/crudSlice';
+import { shooCats} from '../features/pagination/galleryPaginationSlice';
 import { useDispatch } from 'react-redux';
 import CrudWrap from '../wrappers/CrudWrap';
 const CrudItem = ({id, img, name, avail}) => {

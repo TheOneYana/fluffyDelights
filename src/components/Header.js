@@ -8,7 +8,7 @@ return (
 <div className="top-logo-container">
 <img src={logo} className='logo'/>
 </div>
-<nav className="nav"><Link to='/' className="h4">Home</Link><Link to='/About' className="h4">About</Link><Link to='/Gallery' className="h4">Gallery</Link><Link to='/OurClients' className="h4">Our CLients</Link><Link to='/Contact' className="h4">Contact</Link><Link to='/CRUD' className="h4">CRUD</Link></nav>
+<nav className="nav"><Link to='/' className="h4">Home</Link><Link to='/About' className="h4">About</Link><Link to='/Gallery' className="h4">Gallery</Link><Link to='/OurClients' className="h4">Our CLients</Link><Link to='/Contact' className="h4">Contact</Link></nav>
 </Wrapper>
 )
 }
