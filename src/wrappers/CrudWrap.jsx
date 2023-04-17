@@ -1,6 +1,29 @@
 import styled from "styled-components";
 
 const CrudWrap = styled.div`
+.cats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0 0 0;
+}
+.paw {
+  max-width: 200px;
+}
+.callCats{
+  color: var(--font);
+    height: 50px;
+    width: 190px;
+    background-color: var(--dark-beige);
+    border: 1px solid var(--dark-beige);
+    box-shadow: inset 0px 0px 4px 0px rgba(50, 29, 0, 1);
+    border-radius: 10px;
+    margin: 45px 0 45px 0;
+    padding: 2px;
+    cursor: pointer;
+    text-decoration-color: var(--font);
+}
 .kittenImg{
   width: 170px;
   min-height: 250px;
@@ -25,14 +48,14 @@ const CrudWrap = styled.div`
 
 }
 .grid-item {
-  border: 1px solid rgb(9, 2, 8);
+  border: 1px solid rgb(89, 75, 33);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 170px;
   height: 220px;
-  box-shadow: 5px 5px 5px rgb(107, 79, 45); 
+  box-shadow: 5px 5px 5px rgb(77, 51, 31); 
   margin: 30px 0 100px 0;
   }
 .crudBtn {
@@ -157,6 +180,33 @@ p{
     margin: 20px 8px 20px 8px;
 }
 }
+@media (min-width: 1101px) and (max-width: 1749px){
+  .kittenImg{
+  width: 220px;
+  min-height: 250px;
+  margin: 10px 0 10px 0;
+}
+.grid-item {
+  width: 220px;
+  height: 220px;
+ font-size: 21px;
+ margin-bottom: 110px;
+  }
+  .kittensCrud{
+  padding: 15px 0 15px 0;
+  gap:5px 30px;
+  margin-top: 30px;
+  grid-template-columns: repeat(4, 0fr);
+  grid-template-rows: repeat(4, 0fr);
+}
+.nextPrevBtn{ 
+    height: 50px;
+    width: 60px;
+    font-size: 20px;   
+    padding: 5px;
+    margin: 20px 8px 20px 8px;
+}
+}
 @media (min-width: 1750px){
   .kittenImg{
   width: 320px;
@@ -180,14 +230,14 @@ p{
 
 }
 .grid-item {
-  border: 1px solid rgb(183, 117, 170);
+  border: 1px solid rgb(89, 75, 33);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 320px;
   height: 320px;
-  box-shadow: 5px 5px 5px rgb(160, 154, 162); 
+  box-shadow: 5px 5px 5px rgb(77, 51, 31); 
   margin: 40px 0 150px 0;
   }
 .crudBtn {
@@ -226,11 +276,6 @@ p{
     margin: 7px;
     cursor: pointer;
     text-decoration-color: var(--font);
-}
-.nextPrevBtn:hover{
-    color: var(--hover);
-    cursor: pointer;
-    
 }
 }
 `

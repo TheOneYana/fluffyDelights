@@ -2,7 +2,6 @@ import Header from "./Header";
 import Footer from "./Footer";
 import { Landing, Error, Register, About, Gallery, OurClients, Contact} from "../pages";
 import {Routes, Route, Redirect, withRouter, BrowserRouter} from 'react-router-dom';
-import Crud from './Crud';
 const Main = () => {
 return (
     <main className="bkg">
@@ -15,7 +14,6 @@ return (
         <Route path='Gallery' element={<Gallery/>}/>
         <Route path='*' element={<Error/>}/>
         <Route path='Register' element={<Register/>}/>
-        <Route path='Crud' element={<Crud/>}/>
     </Routes>
 <Footer/>
 </main>
