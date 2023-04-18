@@ -31,7 +31,7 @@ const CrudWrap = styled.div`
   margin: 10px 0 10px 0;
 }
 .kittensCrud{
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bolder;
   position: absolute;
   z-index: 2;
