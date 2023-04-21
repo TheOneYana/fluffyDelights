@@ -70,11 +70,86 @@ const CrudWrap = styled.div`
     padding: 2px;
     cursor: pointer;
     text-decoration-color: var(--font);
+    border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#907e65 0 -3px 0 inset;
+  box-sizing: border-box;
+  color:var (--font);
 }
 .crudBtn:hover{
     color: var(--hover);
     cursor: pointer;
 }
+.active{
+    height: 50px;
+    width: 60px;
+    font-size: 20px;
+    background-color: var(  --background_taupe);
+    border: 1px solid var(--dark-beige);
+    box-shadow: inset 0px 0px 4px 0px rgba(50, 29, 0, 1);
+    border-radius: 10px;
+    margin-top: 15px;
+    padding: 5px;
+    margin: 20px 4px 10px 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration-color: var(--font);
+  color: var(--hover);
+
+}
+
+.callCats {
+  align-items: center;
+  appearance: none;
+  background-color: var(--dark-beige);
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#907e65 0 -3px 0 inset;
+  box-sizing: border-box;
+  color:var (--font);
+  cursor: pointer;
+  display: inline-flex;
+  height: 50px;
+  width: 240px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 28px;
+  margin: 20px 0 20px 0;
+  color: var(--hover);
+}
+
+.callCats:focus {
+  box-shadow: #3c301b 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #907e65  0 -3px 0 inset;
+}
+
+.callCats:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #907e65  0 -3px 0 inset;
+  transform: translateY(-2px);
+  color: rgb(41, 28, 23);
+}
+
+.callCats:active {
+  box-shadow: #907e65 0 3px 7px inset;
+  transform: translateY(2px);
+}
+.callCats:link{
+    text-decoration: none;
+  }
 p{
   display: flex;
   flex-direction: row;
@@ -214,6 +289,9 @@ p{
   object-fit: cover;
   margin: 10px 0 10px 0;
 }
+.crudBtn{
+  font-size: 1.5em;
+}
 .kittensCrud{
   position: absolute;
   z-index: 2;
@@ -240,23 +318,7 @@ p{
   box-shadow: 5px 5px 5px rgb(77, 51, 31); 
   margin: 40px 0 150px 0;
   }
-.crudBtn {
-    color: var(--font);
-    height: 50px;
-    width: 240px;
-    background-color: var(--dark-beige);
-    border: 2px solid var(--dark-beige);
-    box-shadow: inset 0px 0px 4px 0px rgba(50, 29, 0, 1);
-    border-radius: 10px;
-    margin-top: 15px;
-    padding: 2px;
-    cursor: pointer;
-    text-decoration-color: var(--font);
-}
-.crudBtn:hover{
-    color: var(--hover);
-    cursor: pointer;
-}
+
 p{
   display: flex;
   flex-direction: row;

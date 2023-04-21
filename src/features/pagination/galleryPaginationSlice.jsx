@@ -5,7 +5,7 @@ const initialState = {
     total: 0,
     imgs:[],
     imgsPerPage: 0,
-    currentPage: 0
+    currentPage: 0,
     
 }
 const galleryPagination = createSlice({
@@ -44,9 +44,3 @@ export const {onNavigateNext, onNavigatePrev,onChangeImgsPage,onCLickCurrentPage
 
 export default galleryPagination.reducer;
 
-/*
-  imgs:cats,
-    imgsPerPage: 8,
-    currentPage: 1
-    
-    */

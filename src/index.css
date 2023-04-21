@@ -11,7 +11,7 @@
   box-sizing: border-box;
 }
 @import url("https://fonts.googleapis.com/css2?family=Alkatra&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;500;600;700&display=swap');
 .top-logo-container {
   display: flex;
   justify-content: center;
@@ -32,8 +32,8 @@
   color: var(--font);
 }
 .nav {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: 'Merienda', cursive;
+  font-weight:700;
   font-size: 20px;
   min-height: 90px;
   background-color: var(--background_taupe);
@@ -47,6 +47,7 @@
   padding: 10px 0 10px 0;
   min-width: 370px;
 }
+
 .h4{
 max-width: 120px;
 
