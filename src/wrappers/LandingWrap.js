@@ -70,7 +70,58 @@ const Wrapper = styled.div`
     width: 25px;
     margin: -4px 5px 0 5px;
   }
+
   button {
+  align-items: center;
+  appearance: none;
+  background-color: var(--dark-beige);
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#907e65 0 -3px 0 inset;
+  box-sizing: border-box;
+  color:var (--font);
+  cursor: pointer;
+  display: inline-flex;
+  height: 50px;
+  width: 240px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 22px;
+  margin: 20px 0 20px 0;
+  color: var(--hover);
+}
+
+button:focus {
+  box-shadow: #3c301b 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #907e65  0 -3px 0 inset;
+}
+
+button:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #907e65  0 -3px 0 inset;
+  transform: translateY(-2px);
+  color: rgb(41, 28, 23);
+}
+
+button:active {
+  box-shadow: #907e65 0 3px 7px inset;
+  transform: translateY(2px);
+}
+.button:link{
+    text-decoration: none;
+  }
+  /* button {
     color: var(--hover);
     height: 50px;
     width: 240px;
@@ -91,7 +142,7 @@ const Wrapper = styled.div`
   }
   .button:link{
     text-decoration: none;
-  }
+  } */
   .carousel {
   margin: 15px 0 70px 19px;
   height: 200px;

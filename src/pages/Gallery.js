@@ -19,29 +19,41 @@ const Gallery = () => {
       </CrudWrap>
     )
   }
+  //number of total images divided by the number of items per page(28/8 = 3.5(4))
   const totalPages = Math.ceil(imgs.length / imgsPerPage);
+  //create new array containing page numbers+1[1,2,3] instead of [0,1,2] so page number start from 1
   const pages = [...Array(totalPages+1).keys()].slice(1);
-  const indexOfLastPage = currentPage * imgsPerPage;
-  const indexOfFirstPage = indexOfLastPage-imgsPerPage;
+  // page 1: images from 1 to 8(1*8), page 2: images from 9 to 16(2*8) etc.
+  const indexOfLastImg = currentPage * imgsPerPage;
+  //8-8=0, 16-8 = 9 (index of firs image on a following page)
+  const indexOfFirstImg = indexOfLastImg-imgsPerPage;
 
-  const visibleImgs = imgs.slice(indexOfFirstPage, indexOfLastPage);
+  //take images from 0 to 8 from imgs array 
+  const visibleImgs = imgs.slice(indexOfFirstImg, indexOfLastImg);
   const navigatePrev = () => {
     if (currentPage !== 1) {dispatch(onNavigatePrev())}
   }
   const navigateNext = () => {
     if (currentPage !== totalPages) {dispatch(onNavigateNext())}
   }
-  const handleCurrentPage = (_p) => {
-    dispatch(onCLickCurrentPage(_p));
+  const handleCurrentPage = (p) => {
+    dispatch(onCLickCurrentPage(p));
   }
+
+//after sending all cats home from a one page, go back one page to stay on current page count.
+if(currentPage>totalPages){
+  dispatch(onNavigatePrev());
+}
+
   return (<CrudWrap>
     <section>
     <section className='pagination'>
     <p><button className='nextPrevBtn' onClick={navigatePrev}>Prev</button>
-        {pages.map((_p)=> (<span className='nextPrevBtn'  key={_p} onClick={()=> handleCurrentPage(_p)}>{_p}</span>))}<button className='nextPrevBtn' onClick={navigateNext} >Next</button>
+        {pages.map((p)=> (<span className={p === currentPage ? 'active':'nextPrevBtn'} key={p} onClick={()=> handleCurrentPage(p)}>{p}</span>))}<button className='nextPrevBtn' onClick={navigateNext}>Next</button>
       </p>
       </section>
       <div className='kittensCrud'>
+        
         {visibleImgs.map((cat)=> {
           return <CrudItem key={cat.id} {...cat}/>
         })}
