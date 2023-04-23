@@ -63,7 +63,7 @@ if(currentPage>totalPages){
     </CrudWrap>)
 }
 
-export default Gallery
+export default Gallery;
 
 // type='button' onClick={dispatch(onNavigateNext())}
 //onClick={dispatch(onNavigatePrev())}

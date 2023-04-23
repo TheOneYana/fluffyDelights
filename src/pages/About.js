@@ -3,6 +3,7 @@ import AboutWrap from '../wrappers/AboutWrap';
 import about1 from '../images/about/about1.jpg';
 import about2 from '../images/about/about2.jpg';
 import about3 from '../images/about/about3.jpg';
+import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
@@ -20,7 +21,7 @@ const About = () => {
     
     <p>Our cattery have produced over 30 kittens so far, and we couldn't be happier with the feedback we've received from our clients. We are grateful to have such wonderful people who share our love and passion for cats. We believe that every kitten we raise is special and unique, and we take great pride in helping our clients find their perfect match.</p>
     
-    <p>Thank you for considering our cattery for your next furry family member.  We understand that purchasing a new kitten can be a big decision, which is why we always happy to answer any questions you might have. We look forward to hearing from you and helping you find your perfect kitten!</p>
+    <p>Thank you for considering our cattery for your next furry family member.  We understand that purchasing a new kitten can be a big decision, which is why we always happy to answer any questions you might have. We look forward to hearing from you and helping you find your perfect kitten!<span> <Link className="linkto" to="/Contact"> Contact us</Link></span></p>
     </div>
     <div className='img'><img src={about1}/></div>
     </section>
@@ -28,7 +29,7 @@ const About = () => {
     <div className='img second_img'><img src={about2}/></div>
     <div className='text'>
     <h3>Adoption process:</h3>
-    <p>As a small cattery, we only have two litters per year. To check if any kittens are currently available for adoption, please visit the "Available Kittens" section of our website. In the event that no kittens are currently available, please do not hesitate to contact us for information on upcoming litters.</p>
+    <p>As a small cattery, we only have two litters per year. To check if any kittens are currently available for adoption, please visit the <span> <Link className="linkto" to="/Available"> Available Kittens</Link></span> section of our website. In the event that no kittens are currently available, please do not hesitate to contact us for information on upcoming litters.</p>
     <p>If you find an available kitten that you would like to adopt, please contact us to schedule a visit. Kittens are typically ready to go to their new homes when they reach twelve weeks of age. At eight weeks old, we take them to their first veterinary appointment for a check-up and to receive their necessary shots.</p>
     </div>
     </section>

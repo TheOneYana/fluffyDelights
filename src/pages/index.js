@@ -5,6 +5,7 @@ import Contact from "./Contact"
 import Gallery from './Gallery';
 import Register from './Register';
 import OurClients from './OurClients';
+import Available from "./Available";
 
 
-export {Landing, Error, Register, About, Gallery, OurClients, Contact};
+export {Landing, Error, Register, About, Gallery, OurClients, Contact, Available};
