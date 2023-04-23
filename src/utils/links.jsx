@@ -18,7 +18,7 @@ path: '/OurClients'},
     text: 'Contact',
 path: '/Contact'},
 {id: 7,
-    text: 'Cat Game!',
+text: 'Cat Game!',
 path: "https://flip-card-memory-game.netlify.app"},
 ];
 export default links;
