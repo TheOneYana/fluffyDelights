@@ -81,8 +81,8 @@ const CrudWrap = styled.div`
     cursor: pointer;
 }
 .active{
-    height: 50px;
-    width: 60px;
+  height: 40px;
+    width: 50px;
     font-size: 20px;
     background-color: var(  --background_taupe);
     border: 1px solid var(--dark-beige);
@@ -227,6 +227,10 @@ p{
     padding: 5px;
     margin: 20px 8px 15px 8px;
 }
+.active{
+  height: 50px;
+    width: 60px;
+}
 }
 @media (min-width: 801px) and (max-width: 1100px){
   .kittenImg{
@@ -254,6 +258,11 @@ p{
     padding: 5px;
     margin: 20px 8px 20px 8px;
 }
+.active{
+  height: 50px;
+  width: 60px;
+  margin: 20px 8px 20px 8px;
+}
 }
 @media (min-width: 1101px) and (max-width: 1749px){
   .kittenImg{
@@ -280,6 +289,11 @@ p{
     font-size: 20px;   
     padding: 5px;
     margin: 20px 8px 20px 8px;
+}
+.active{
+  height: 50px;
+  width: 60px;
+  margin: 20px 8px 20px 8px;
 }
 }
 @media (min-width: 1750px){
@@ -328,16 +342,20 @@ p{
 .nextPrevBtn{
   color: var(--font);
     height: 50px;
-    width: auto;
+    width: 50px;
     background-color: var(  --background_taupe);
     border: 1px solid var(--dark-beige);
     box-shadow: inset 0px 0px 4px 0px rgba(50, 29, 0, 1);
     border-radius: 10px;
-    margin-top: 15px;
     padding: 10px;
-    margin: 7px;
+    margin: 15px 7px 7px 7px;
     cursor: pointer;
     text-decoration-color: var(--font);
+}
+.active{
+  height: 50px;
+  width: 50px;
+  margin: 15px 7px 7px 7px;
 }
 }
 `
