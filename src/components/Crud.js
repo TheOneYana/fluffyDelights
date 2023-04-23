@@ -23,7 +23,7 @@ const deleteItm = () => {
   }
   return (
     <CrudWrap>
-    <section>
+    <section className='mainSection'>
       <div className='kittensCrud'>
         {catItems.map((cat)=> {
           return <CrudItem key={cat.id} {...cat}/>

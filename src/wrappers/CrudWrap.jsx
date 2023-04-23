@@ -1,12 +1,14 @@
 import styled from "styled-components";
 
 const CrudWrap = styled.div`
+
 .cats {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 50px 0 0 0;
+  background-color:  rgb(186, 161, 132);
 }
 .paw {
   max-width: 200px;
@@ -23,6 +25,7 @@ const CrudWrap = styled.div`
     padding: 2px;
     cursor: pointer;
     text-decoration-color: var(--font);
+    
 }
 .kittenImg{
   width: 170px;

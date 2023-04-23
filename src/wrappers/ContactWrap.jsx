@@ -21,6 +21,7 @@ main{
     justify-content: center;
     align-items: center;
     width: 900px;
+    background-color:  rgb(186, 161, 132);
 }
 p{
     font-size: 45px;

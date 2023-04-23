@@ -45,6 +45,7 @@
   box-shadow: inset 0px 0px 20px 0px rgba(135, 114, 89, 6);
   padding: 10px 0 10px 0;
   min-width: 370px;
+overflow: hidden;
 }
 .seven{
   display: none;
@@ -79,6 +80,7 @@ max-width: 250px;
     width: 500px;
   }
   .nav{
+    font-size: 17px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
