@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 const AboutWrap = styled.div`
+.linkto{
+    color: black;
+}
 .about_container{
 
 }

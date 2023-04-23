@@ -1,6 +1,6 @@
 import Header from "./Header";
 import Footer from "./Footer";
-import { Landing, Error, Register, About, Gallery, OurClients, Contact} from "../pages";
+import { Landing, Error, Register, About, Gallery, OurClients, Contact, Available} from "../pages";
 import {Routes, Route, Redirect, withRouter, BrowserRouter} from 'react-router-dom';
 const Main = () => {
 return (
@@ -14,6 +14,7 @@ return (
         <Route path='Gallery' element={<Gallery/>}/>
         <Route path='*' element={<Error/>}/>
         <Route path='Register' element={<Register/>}/>
+        <Route path='Available' element={<Available/>}/>
     </Routes>
 <Footer/>
 </main>
