@@ -1,14 +1,22 @@
 import logo from "../images/NoseShadowSmaller.png"
 import { Link } from 'react-router-dom';
 import Wrapper from "../wrappers/LandingWrap";
+import {currentPageFunc} from '../features/nav/navSlice';
+import {useDispatch, useSelector} from 'react-redux';
+import links from '../utils/links';
 
 const Header = () => {
+    const dispatch = useDispatch();
+    const {currentPage} = useSelector((store)=> store.nav);
+    const handleCurrentPage = (p) => {
+        dispatch(currentPageFunc(p));
+    }
 return (
 <Wrapper>
 <div className="top-logo-container">
-<Link to='/'><img src={logo} className='logo'/></Link>
+<Link to='/' onClick={()=>handleCurrentPage(links[0])}><img src={logo} className='logo'/></Link>
 </div>
-<nav className="nav"><Link to='/' className="h4">Home</Link><Link to='/About' className="h4">About</Link><Link to='/Gallery' className="h4">Gallery</Link><Link to='/OurClients' className="h4">Our CLients</Link><Link to='/Contact' className="h4">Contact</Link><Link to="https://flip-card-memory-game.netlify.app"  className="h4">Cat Game!</Link></nav>
+<nav className="nav">{links.map((link)=> (<Link key={link.id} to={link.path} className={link === currentPage ? "active_link" : "h4"} onClick={()=>handleCurrentPage(link)}>{link.text}</Link>))}</nav>
 </Wrapper>
 )
 }
