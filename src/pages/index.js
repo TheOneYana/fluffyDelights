@@ -6,6 +6,6 @@ import Gallery from './Gallery';
 import Register from './Register';
 import OurClients from './OurClients';
 import Available from "./Available";
+import Success from "./Success";
 
-
-export {Landing, Error, Register, About, Gallery, OurClients, Contact, Available};
+export {Landing, Error, Register, About, Gallery, OurClients, Contact, Available, Success};

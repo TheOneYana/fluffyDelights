@@ -43,12 +43,31 @@ p{
     margin: 10px 5px 2px 5px;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form .input, .contact-form textarea {
     border-radius: 10px;
     font-size: 18px;
     padding: 10px;
     border: 1px solid var(--font);
     background-color: #ddd3c7;
+}
+.input_error{
+      border-radius: 10px;
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid var(--font);
+    background-color: #ddd3c7;
+  color: red;
+}
+input:focus {
+ border: 2px solid  var(--hover);
+ outline: none;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+  transition: background-color 5000s;
+  -webkit-text-fill-color: var(--font)!important;
 }
 
 

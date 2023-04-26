@@ -3,23 +3,28 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@bootstrap-styled/provider": "^2.0.3",
-    "@bootstrap-styled/v4": "^3.4.0",
     "@reduxjs/toolkit": "^1.9.3",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "eslint-config-next": "^13.3.1",
     "firebase": "^9.19.1",
+    "formik": "^2.2.9",
+    "framer-motion": "^10.12.4",
+    "next": "^13.3.1",
     "normalize.css": "^8.0.1",
     "react": "^18.2.0",
+    "react-confetti": "^6.1.0",
     "react-dom": "^18.2.0",
-    "react-grid-carousel": "^1.0.1",
     "react-multi-carousel": "^2.8.3",
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.10.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "4.0.3",
+    "stream": "^0.0.2",
     "styled-components": "^4.4.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "webpack": "^4.44.2",
+    "yup": "^1.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -44,5 +49,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "buffer": "^6.0.3",
+    "process": "^0.11.10",
+    "react-app-rewired": "^2.2.1",
+    "react-error-overlay": "^6.0.9",
+    "url": "^0.11.0"
   }
 }
