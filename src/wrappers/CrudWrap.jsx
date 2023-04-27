@@ -5,15 +5,17 @@ const CrudWrap = styled.div`
 .cats {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   padding: 50px 0 0 0;
   background-color:  rgb(186, 161, 132);
+  height: 500px;
 }
 .paw {
-  max-width: 200px;
+  max-width: 150px;
+  margin-top: 40px;
 }
-.callCats{
+/* .callCats{
   color: var(--font);
     height: 50px;
     width: 190px;
@@ -26,7 +28,7 @@ const CrudWrap = styled.div`
     cursor: pointer;
     text-decoration-color: var(--font);
     
-}
+} */
 .kittenImg{
   width: 170px;
   min-height: 250px;
@@ -132,7 +134,7 @@ const CrudWrap = styled.div`
   white-space: nowrap;
   will-change: box-shadow,transform;
   font-size: 28px;
-  margin: 20px 0 20px 0;
+  margin: 40px 0 10px 0;
   color: var(--hover);
 }
 

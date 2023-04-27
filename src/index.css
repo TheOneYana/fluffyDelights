@@ -57,6 +57,33 @@ max-width: 250px;
 .active_link {
   color: var(--hover);
 }
+.main_contact_container{
+width: 100vw;
+height: 100vh;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items:flex-start;
+}
+
+.contact_container{
+width: 100vw;
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: start;
+align-items:center;
+}
+.contact_paw{
+  width: 150px;
+}
+
+.contact_h2{
+  margin: 40px 0 20px 0;
+}
+.contact_h3{
+  margin: 10px 0 20px 0;
+}
 
 
 @media (min-width: 600px) and (max-width: 699px) {
