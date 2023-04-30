@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk} from '@reduxjs/toolkit';
-import cats from '../../cats';
+import cats from '../../utils/cats';
 const initialState = {
     isLoading: true,
     total: 0,

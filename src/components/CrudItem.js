@@ -1,7 +1,8 @@
-import React from 'react';
 import { shooCats} from '../features/pagination/galleryPaginationSlice';
 import { useDispatch } from 'react-redux';
 import CrudWrap from '../wrappers/CrudWrap';
+
+
 const CrudItem = ({id, img, name, avail}) => {
   const dispatch = useDispatch();
   return (
@@ -14,6 +15,6 @@ const CrudItem = ({id, img, name, avail}) => {
       </div>
       </CrudWrap>)}
 
-export default CrudItem
+export default CrudItem;
 
 //  onClick={()=>deleteItm(id)}

@@ -184,6 +184,13 @@ p{
     cursor: pointer;
     
 }
+
+.availKittens{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
 @media (min-width: 490px) and (max-width: 600px){
   .kittenImg{
   width: 200px;

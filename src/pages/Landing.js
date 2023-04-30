@@ -1,6 +1,6 @@
 import pawicon from "../images/paw-icon.png";
 import { Link } from 'react-router-dom';
-import main from "../images/main-temp.jpg";
+import main from "../images/main-temp.webp";
 import paw from "../images/paw2.png";
 import Wrapper from '../wrappers/LandingWrap.js';
 // import Carousel from 'react-grid-carousel'

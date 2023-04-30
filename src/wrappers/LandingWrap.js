@@ -64,6 +64,7 @@ const Wrapper = styled.div`
     align-items: center;
     font-size: 25px;
     margin-top: 20px;
+    text-align: center;
   }
 
   .pawicon {
