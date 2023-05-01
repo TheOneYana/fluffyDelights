@@ -9,20 +9,21 @@ const LazyContact = React.lazy(()=> import("../pages/Contact"));
 const LazySuccess = React.lazy(()=> import("../pages/Success"));
 
 
+
 function AnimatedRoutes () {
 const location = useLocation();
 return (
 <AnimatePresence>
 <Routes location = {location} key={location.pathname}>
-    <Route path='/' element={<React.Suspense fallback='Loading...'><LazyLanding/></React.Suspense>}/>
-    <Route path='About' element={<React.Suspense fallback='Loading...'><LazyAbout/></React.Suspense>}/>
-    <Route path='OurClients' element={<React.Suspense fallback='Loading...'><OurClients/></React.Suspense>}/>
-    <Route path='Contact' element={<React.Suspense fallback='Loading...'><LazyContact/></React.Suspense>}/>
-    <Route path='Gallery' element={<React.Suspense fallback='Loading...'><LazyGallery/></React.Suspense>}/>
-    <Route path='*' element={<React.Suspense fallback='Loading...'><Error/></React.Suspense>}/>
-    <Route path='Register' element={<React.Suspense fallback='Loading...'><Register/></React.Suspense>}/>
-    <Route path='Available' element={<React.Suspense fallback='Loading...'><Available/></React.Suspense>}/>
-    <Route path='Success' element={<React.Suspense fallback='Loading...'><LazySuccess/></React.Suspense>}/>
+    <Route path='/' element={<React.Suspense fallback={<div className='lazyloading'><img className="paw_tracks" src={"https://i.ibb.co/LQvTtqc/paw-tracks-copy.gif"}/></div>}><LazyLanding/></React.Suspense>}/>
+    <Route path='About' element={<React.Suspense fallback={<div className='lazyloading'><img className="paw_tracks" src={"https://i.ibb.co/LQvTtqc/paw-tracks-copy.gif"}/></div>}><LazyAbout/></React.Suspense>}/>
+    <Route path='OurClients' element={<React.Suspense fallback={<div className='lazyloading'><img className="paw_tracks" src={"https://i.ibb.co/LQvTtqc/paw-tracks-copy.gif"}/></div>}><OurClients/></React.Suspense>}/>
+    <Route path='Contact' element={<React.Suspense fallback={<div className='lazyloading'><img className="paw_tracks" src={"https://i.ibb.co/LQvTtqc/paw-tracks-copy.gif"}/></div>}><LazyContact/></React.Suspense>}/>
+    <Route path='Gallery' element={<React.Suspense fallback={<div className='lazyloading'><img className="paw_tracks" src={"https://i.ibb.co/LQvTtqc/paw-tracks-copy.gif"}/></div>}><LazyGallery/></React.Suspense>}/>
+    <Route path='*' element={<React.Suspense fallback={<div className='lazyloading'><img className="paw_tracks" src={"https://i.ibb.co/LQvTtqc/paw-tracks-copy.gif"}/></div>}><Error/></React.Suspense>}/>
+    <Route path='Register' element={<React.Suspense fallback={<div className='lazyloading'><img className="paw_tracks" src={"https://i.ibb.co/LQvTtqc/paw-tracks-copy.gif"}/></div>}><Register/></React.Suspense>}/>
+    <Route path='Available' element={<React.Suspense fallback={<div className='lazyloading'><img className="paw_tracks" src={"https://i.ibb.co/LQvTtqc/paw-tracks-copy.gif"}/></div>}><Available/></React.Suspense>}/>
+    <Route path='Success' element={<React.Suspense fallback={<div className='lazyloading'><img className="paw_tracks" src={"https://i.ibb.co/LQvTtqc/paw-tracks-copy.gif"}/></div>}><LazySuccess/></React.Suspense>}/>
 </Routes>
 </AnimatePresence>
 )
