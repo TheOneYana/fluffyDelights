@@ -3,8 +3,16 @@ import {useDispatch, useSelector} from 'react-redux';
 import CrudItem from '../components/CrudItem';
 import CrudWrap from '../wrappers/CrudWrap';
 import paw2 from '../images/paw2.png';
+import {useState, useEffect} from 'react';
+import Loading from "../components/Loading";
 
 const Gallery = () => {
+  const [loading, setLoading] = useState(true);
+  useEffect(()=>{
+  setTimeout(()=>{
+    setLoading(false);
+  }, 2000)
+  }, []);
   const dispatch = useDispatch();
   const {imgs,imgsPerPage, currentPage,total} = useSelector((store) => store.imgs);
 
@@ -46,6 +54,7 @@ if(currentPage>totalPages){
 }
 
   return (<CrudWrap>
+       {loading ? (<Loading/>):(
     <section>
     <section className='pagination'>
     <p><button className='nextPrevBtn' onClick={navigatePrev}>Prev</button>
@@ -60,6 +69,7 @@ if(currentPage>totalPages){
       </div>
       
     </section>
+       )}
     </CrudWrap>)
 }
 

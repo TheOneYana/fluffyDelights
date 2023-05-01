@@ -6,6 +6,9 @@ import Wrapper from '../wrappers/LandingWrap.js';
 // import Carousel from 'react-grid-carousel'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import {useState, useEffect} from 'react';
+import Loading from "../components/Loading";
+
 
 const responsive = {
   superLargeDesktop: {
@@ -46,9 +49,18 @@ const responsive = {
     items: 2
   }
 };
+
+
 const Landing = () => {
+const [loading, setLoading] = useState(true);
+useEffect(()=>{
+  setTimeout(()=>{
+    setLoading(false);
+  }, 2000)
+}, []);
   return (
     <Wrapper>
+    {loading ? (<Loading/>):(
     <main className="bkg">
     <div className="container page">
           <div className="main-img-container">
@@ -121,8 +133,9 @@ const Landing = () => {
           </div>
         </div>
         </main>
-    </Wrapper>
-    
+  
+)}
+  </Wrapper>
   );
 };
 

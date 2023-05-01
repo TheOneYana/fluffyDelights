@@ -4,10 +4,19 @@ import about1 from '../images/about/about1.webp';
 import about2 from '../images/about/about2.webp';
 import about3 from '../images/about/about3.webp';
 import { Link } from 'react-router-dom';
+import {useState, useEffect} from 'react';
+import Loading from "../components/Loading";
 
 const About = () => {
+const [loading, setLoading] = useState(true);
+useEffect(()=>{
+setTimeout(()=>{
+  setLoading(false);
+}, 2000)
+}, []);
   return (
     <AboutWrap>
+       {loading ? (<Loading/>):(
     <main>
     <div className='about_container'>
     <section className='founders'>
@@ -43,6 +52,7 @@ const About = () => {
     </section>
     </div>
     </main>
+    )}
     </AboutWrap>
   )
 }

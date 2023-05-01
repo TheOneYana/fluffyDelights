@@ -1,20 +1,20 @@
 import client from '../utils/ourClientsData';
-import CrudWrap from '../wrappers/CrudWrap';
+import OurClientsWrap from '../wrappers/OurClientsWrap';
 
 
 const OurClients = () => {
  return (
-  <CrudWrap>
-  <div className='availKittens'>
+  <OurClientsWrap>
+  <div className='container'>
   {client.map((c)=>  <div className='grid-item' key={c.id}>
-  <p>{c.name}</p>
-  <img className='kittenImg'src={c.img} alt='cat'/>
-  <p>{c.statement}</p>
+  <p className='name'>{c.name}</p>
+  <img className='clientImg'src={c.img} alt='cat'/>
+  <p className='statement'>{c.statement}</p>
   </div>
   )
 }
 </div>
-  </CrudWrap>
+  </OurClientsWrap>
     )
 }
 

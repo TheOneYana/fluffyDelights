@@ -4,9 +4,16 @@ import {addDoc, collection } from 'firebase/firestore';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { useNavigate, useParams } from "react-router-dom";
-
+import {useState, useEffect} from 'react';
+import Loading from "../components/Loading";
 
 const Contact = () => {
+  const [loading, setLoading] = useState(true);
+useEffect(()=>{
+setTimeout(()=>{
+  setLoading(false);
+}, 2000)
+}, []);
 const navigate = useNavigate();
 const userCollectionRef = collection(db, 'contactdata');
 const formik = useFormik({
@@ -40,6 +47,7 @@ const formik = useFormik({
   //  }
   return (
     <ContactWrap>
+        {loading ? (<Loading/>):(
       <main>
     <div className='container'>
       <p>Contact Form</p>
@@ -79,6 +87,7 @@ const formik = useFormik({
       </form>
     </div>
     </main>
+        )}
     </ContactWrap>
   )
 }
