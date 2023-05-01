@@ -90,7 +90,18 @@ align-items:center;
 
 }
 
-
+.lazyloading{
+  background: var(--background_taupe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  
+}
+.paw_tracks{
+  max-width: 1000px;
+}
 @media (min-width: 600px) and (max-width: 699px) {
   .logo {
     width: 600px;

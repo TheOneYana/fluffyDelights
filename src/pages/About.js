@@ -1,8 +1,8 @@
 import React from 'react'
 import AboutWrap from '../wrappers/AboutWrap';
-import about1 from '../images/about/about1.jpg';
-import about2 from '../images/about/about2.jpg';
-import about3 from '../images/about/about3.jpg';
+import about1 from '../images/about/about1.webp';
+import about2 from '../images/about/about2.webp';
+import about3 from '../images/about/about3.webp';
 import { Link } from 'react-router-dom';
 
 const About = () => {
