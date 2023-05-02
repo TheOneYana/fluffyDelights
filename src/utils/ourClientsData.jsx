@@ -11,6 +11,12 @@ const ourClientsData = [
         statement: "I cannot express how thankful I am to Fluffy Delights cattery for introducing me to Roxy. She is an exceptional cat, incredibly intelligent and friendly. She has a unique personality that I simply adore, and I couldn't have asked for a better feline companion. Roxy has brought so much joy and happiness into my life, and I am grateful to Fluffy Delights cattery for matching me with such an amazing pet.",
         img: "https://i.ibb.co/r0Cp1gw/Roman-and-Roxy.webp",
     },
+    {
+        id: 3,
+        name: "Alena and her cat Many",
+        statement: "I had a fantastic experience with the cattery. The staff there were incredibly kind and helpful throughout the adoption process, which was both fast and straightforward. It was a wonderful experience, and I'm grateful to the team for all their help. I consider myself very fortunate to have found Many, who is undoubtedly the best cat in the world. I cannot imagine my life without him now.",
+        img: "https://i.ibb.co/cw31jvz/Alena-and-Many.webp",
+    }
 ];
 
 export default ourClientsData;

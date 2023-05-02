@@ -60,24 +60,29 @@ grid-template-columns: repeat(2, 0fr);
 }
 .grid-item{
 justify-content: start;
+align-items: flex-start;
 }
 .clientImg{
 height: 400px;
 }
 }
-@media (min-width: 1000px) and (max-width: 1600px) {
+@media (min-width: 1000px) and (max-width: 1717px) {
 .container{
 flex-direction: row;
-grid-template-columns: repeat(4, 0fr);
+grid-template-columns: repeat(3, 0fr);
 }
 }
 @media (min-width: 1718px) {
 .container{
+flex-direction: row;
+
 grid-template-columns: repeat(3, 0fr);
 padding-bottom: 40px;
 
 }
 .grid-item{
+justify-content: start;
+align-items: flex-start;
 width: 550px;
 height: auto;
 display: block;
