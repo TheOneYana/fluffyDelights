@@ -8,10 +8,10 @@ import {useState, useEffect} from 'react';
 import Loading from "../components/Loading";
 
 const Contact = () => {
-  const [loading, setLoading] = useState(true);
+const [loading, setLoading] = useState(true);
 useEffect(()=>{
 setTimeout(()=>{
-  setLoading(false);
+setLoading(false);
 }, 2000)
 }, []);
 const navigate = useNavigate();
