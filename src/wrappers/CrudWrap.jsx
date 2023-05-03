@@ -316,7 +316,7 @@ p{
   margin: 10px 0 10px 0;
 }
 .crudBtn{
-  font-size: 1.5em;
+  font-size: 24px;
 }
 .kittensCrud{
   position: absolute;

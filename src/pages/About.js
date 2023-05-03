@@ -32,10 +32,10 @@ setTimeout(()=>{
     
     <p>Thank you for considering our cattery for your next furry family member.  We understand that purchasing a new kitten can be a big decision, which is why we always happy to answer any questions you might have. We look forward to hearing from you and helping you find your perfect kitten!<span> <Link className="linkto" to="/Contact"> Contact us</Link></span></p>
     </div>
-    <div className='img'><img src={about1}/></div>
+    <div className='img'><img id="img1" src={about1}/></div>
     </section>
     <section className='adoption_process'>
-    <div className='img second_img'><img src={about2}/></div>
+    <div className='img second_img'><img id="img2" src={about2}/></div>
     <div className='text'>
     <h3>Adoption process:</h3>
     <p>As a small cattery, we only have two litters per year. To check if any kittens are currently available for adoption, please visit the <span> <Link className="linkto" to="/Available"> Available Kittens</Link></span> section of our website. In the event that no kittens are currently available, please do not hesitate to contact us for information on upcoming litters.</p>
@@ -48,7 +48,7 @@ setTimeout(()=>{
     <p>After adopting your kitten, we kindly request that you schedule a spay/neuter appointment with your veterinarian when the kitten turns five months old. Spaying or neutering is crucial to avoid many health issues, including cancer, and we ask all of our clients to sign a contract stating that they undertake to spay/neuter their kitten when it turns five months old.</p>
     <p>We are committed to ensuring that each of our kittens finds a loving and caring home. If you have any questions about the adoption process or any of our kittens, please do not hesitate to contact us. We look forward to hearing from you and helping you find new furry friend.</p>
     </div>
-    <div className='img'><img src={about3}/></div>
+    <div className='img'><img id="img3" src={about3}/></div>
     </section>
     </div>
     </main>

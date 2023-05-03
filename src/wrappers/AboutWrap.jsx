@@ -28,12 +28,11 @@ const AboutWrap = styled.div`
   
 }
 img{
-    width: 800px;
-    height: 500px;
+
     max-width: 100%;
     display: block;
     object-fit: cover;
-    object-position: 37% 25%;
+
 
 }
 .second_img{
@@ -48,6 +47,11 @@ img{
     .second_img{
         display: none
     }
+    #img1, #img2, #img3{
+    width: 800px;
+    height: 500px;
+    object-position: 37% 25%;
+    }
 
 }
 @media (min-width: 600px) and (max-width: 699px) {
@@ -59,6 +63,11 @@ img{
 .second_img{
     display: none
 }
+#img1, #img2, #img3{
+    width: 800px;
+    height: 500px;
+    object-position: 37% 25%;
+    }
 }
 @media (min-width: 699px) and (max-width: 799px) {
 .text{
@@ -68,6 +77,11 @@ img{
     .second_img{
     display: none
 }
+#img1, #img2, #img3{
+    width: 800px;
+    height: 500px;
+    object-position: 37% 25%;
+    }
 }
 @media (min-width: 800px) and (max-width: 868px) {
 main{
@@ -82,6 +96,7 @@ main{
     width:810px;
 
 }
+
 .founders{
     display: flex;
     flex-direction: row;
@@ -114,12 +129,12 @@ main{
     height: auto;
 
 }
-img{
-    width: 1000px;
-    height: 800px;
+#img1, #img2, #img3{
+    width: 100%;
+    height: 100%;
 }
 .second_img{
-        display: block;
+    display: block;
 
     }
   
@@ -147,7 +162,7 @@ main{
     height: auto;
 
 }
-img{
+#img1, #img2, #img3{
     width: 1000px;
     height: 800px;
 }
@@ -181,7 +196,7 @@ img{
     height: auto;
 
 }
-img{
+#img1, #img2, #img3{
     width: 977px;
     height: 800px;
 }
@@ -214,7 +229,7 @@ img{
     height: auto;
 
 }
-img{
+#img1, #img2, #img3{
     width: 990px;
     height: 800px;
 }
@@ -251,7 +266,7 @@ img{
     height: auto;
 
 }
-img{
+#img1, #img2, #img3{
     width: 1010px;
     height: 800px;
 }
@@ -288,7 +303,7 @@ img{
     height: auto;
 
 }
-img{
+#img1, #img2, #img3{
     width: 1210px;
     height: 800px;
 }
@@ -326,7 +341,7 @@ img{
     height: auto;
 
 }
-img{
+#img1, #img2, #img3{
     width: 1320px;
     height: 900px;
 }
