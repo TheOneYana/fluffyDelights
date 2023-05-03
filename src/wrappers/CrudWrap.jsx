@@ -64,22 +64,23 @@ const CrudWrap = styled.div`
   margin: 30px 0 100px 0;
   }
 .crudBtn {
-    color: var(--font);
-    height: 50px;
-    width: 140px;
-    background-color: var(--dark-beige);
-    border: 2px solid var(--dark-beige);
-    box-shadow: inset 0px 0px 4px 0px rgba(50, 29, 0, 1);
-    border-radius: 10px;
-    margin-top: 15px;
-    padding: 2px;
-    cursor: pointer;
-    text-decoration-color: var(--font);
-    border-radius: 4px;
+  color: var(--font);
+  height: 50px;
+  width: 140px;
+  background-color: var(--dark-beige);
+  border: 2px solid var(--dark-beige);
+  box-shadow: inset 0px 0px 4px 0px rgba(50, 29, 0, 1);
+  border-radius: 10px;
+  margin-top: 15px;
+  padding: 2px;
+  cursor: pointer;
+  text-decoration-color: var(--font);
+  border-radius: 4px;
   border-width: 0;
   box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#907e65 0 -3px 0 inset;
   box-sizing: border-box;
   color:var (--font);
+  font-size: 20px;
 }
 .crudBtn:hover{
     color: var(--hover);
