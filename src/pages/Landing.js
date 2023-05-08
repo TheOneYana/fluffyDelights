@@ -1,6 +1,5 @@
 import pawicon from "../images/paw-icon.png";
 import { Link } from 'react-router-dom';
-import main from "../images/main-temp.webp";
 import paw from "../images/paw2.png";
 import Wrapper from '../wrappers/LandingWrap.js';
 // import Carousel from 'react-grid-carousel'
@@ -64,7 +63,7 @@ useEffect(()=>{
     <main className="bkg">
     <div className="container page">
           <div className="main-img-container">
-            <img src={main} alt='british shorthair cat' className="main-img"/></div>
+            <img src="https://i.ibb.co/Qdhs8Qy/main-temp-1.webp" alt='british shorthair cat' className="main-img"/></div>
           <div className="info">
             <span>
               <p>
