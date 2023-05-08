@@ -67,10 +67,43 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus, 
 input:-webkit-autofill:active  {
   transition: background-color 5000s;
-  -webkit-text-fill-color: var(--font)!important;
+
+}
+.name_container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+.notamember {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  font-size: 24px;
+
+}
+.signOut{
+  align-self: center !important;
+  
+}
+.email {
+  color: var(--hover);
+  font-size: 28px;
+}
+.inputError{
+font-size: 19px;
+padding: 3px;
+color: red;
+display:none;
+}
+input:invalid[focused="true"] ~ .inputError {
+  display: block;
 }
 
-
+.signedIn {
+  font-size: 25px;
+}
 .submitBtn {
   align-items: center;
   appearance: none;

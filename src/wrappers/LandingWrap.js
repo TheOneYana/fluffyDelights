@@ -2,14 +2,14 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
   .container {
-    min-width: 375px;
+    min-width: 370px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   .main-img-container {
-    min-width: 375px;
+    min-width: 370px;
     height: auto;
     background-color: var(--background_taupe);
   }
@@ -25,7 +25,7 @@ const Wrapper = styled.div`
     font-size: 22.2px;
     display: flex;
     justify-content: center;
-    min-width: 375px;
+    min-width: 370px;
     height: auto;
     background-color: var(--dark-beige);
     padding: 18px 10px 0px 14px;

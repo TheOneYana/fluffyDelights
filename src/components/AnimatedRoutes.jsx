@@ -7,7 +7,8 @@ const LazyLanding = React.lazy(()=> import("../pages/Landing"));
 const LazyGallery = React.lazy(()=> import("../pages/Gallery"));
 const LazyContact = React.lazy(()=> import("../pages/Contact"));
 const LazySuccess = React.lazy(()=> import("../pages/Success"));
-
+const LazySuccessLogin = React.lazy(()=> import("../pages/SuccessLogin"));
+const LazySuccessRegister = React.lazy(()=> import("../pages/SuccessRegister"));
 
 
 function AnimatedRoutes () {
@@ -24,6 +25,8 @@ return (
     <Route path='Register' element={<React.Suspense><Register/></React.Suspense>}/>
     <Route path='Available' element={<React.Suspense><Available/></React.Suspense>}/>
     <Route path='Success' element={<React.Suspense><LazySuccess/></React.Suspense>}/>
+    <Route path='SuccessLogin' element={<React.Suspense><LazySuccessLogin/></React.Suspense>}/>
+    <Route path='SuccessRegister'element={<React.Suspense><LazySuccessRegister/></React.Suspense>}/>
 </Routes>
 </AnimatePresence>
 )
