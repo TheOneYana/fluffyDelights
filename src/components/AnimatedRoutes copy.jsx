@@ -1,7 +1,8 @@
 import React from 'react'
 import {Routes, Route, useLocation} from 'react-router-dom';
-import { Landing, Error, Register, About, Gallery, OurClients, Contact, Available, Success} from "../pages";
-import {AnimatePresence} from "framer-motion/dist/framer-motion"; ;
+import { Landing, Error, Register, About, Gallery, OurClients, Contact, Available, Success,SuccessLogin,SuccessRegister} from "../pages";
+import {AnimatePresence} from "framer-motion/dist/framer-motion";import SuccessLogin from '../pages/SuccessLogin';
+ ;
 
 
 function AnimatedRoutes () {
@@ -18,6 +19,8 @@ return (
     <Route path='Register' element={<Register/>}/>
     <Route path='Available' element={<Available/>}/>
     <Route path='Success' element={<Success/>}/>
+    <Route path='SuccessLogin' element={<SuccessLogin/>}/>
+    <Route path='SuccessRegister' element={<Success/>}/>
 </Routes>
 </AnimatePresence>
 )

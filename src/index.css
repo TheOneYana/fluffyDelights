@@ -4,6 +4,7 @@
   --hover: rgb(245, 215, 179);
   --dark-beige: rgb(139, 106, 75);
   --font: rgb(36, 20, 1);
+
 }
 *{
   margin: 0;
@@ -99,10 +100,14 @@ align-items:center;
 
 .contact_h2{
   margin: 40px 0 20px 0;
-  font-size: 28px;
+  padding: 0 10px 0 10px;
+  font-size: 24px;
+  text-align: center;
+  line-height: normal;
 }
 .contact_h3{
   margin: 10px 0 20px 0;
+
   font-size: 24px;
   text-align: center;
 
@@ -158,7 +163,7 @@ align-items:center;
 @media (min-width: 800px) and (max-width: 1717px) {
   .logo {
     width: 500px;
-   }
+  }
   .nav{
     display: flex;
     flex-direction: row;
