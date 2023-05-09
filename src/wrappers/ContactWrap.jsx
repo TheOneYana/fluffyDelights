@@ -76,11 +76,13 @@ input:-webkit-autofill:active  {
 
 }
 .notamember {
+  text-align: center;
   align-self: center;
   display: flex;
   flex-direction: column;
   margin-top: 40px;
   font-size: 24px;
+  color: var(--font);
 
 }
 .signOut{
@@ -112,7 +114,7 @@ input:invalid[focused="true"] ~ .inputError {
   border-width: 0;
   box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#907e65 0 -3px 0 inset;
   box-sizing: border-box;
-  color:var (--font);
+  color: var(--font);
   cursor: pointer;
   display: inline-flex;
   font-family: 'Merienda', cursive;
