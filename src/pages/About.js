@@ -3,7 +3,7 @@ import AboutWrap from '../wrappers/AboutWrap';
 import { Link } from 'react-router-dom';
 import {useState, useEffect} from 'react';
 import Loading from "../components/Loading";
-
+import {Helmet} from 'react-helmet-async';
 const About = () => {
 const [loading, setLoading] = useState(true);
 useEffect(()=>{
@@ -13,6 +13,11 @@ setTimeout(()=>{
 }, []);
   return (
     <AboutWrap>
+      <Helmet>
+        <title>About our British Shorthair cattery</title>
+        <meta name = 'description' content = 'Read about our British Shorthair Cattery. Here we describe adoption process, giving you some information about us, our cats, kittens and more.'/>
+        <link rel='canonical' href='/About'/>
+      </Helmet>
        {loading ? (<Loading/>):(
     <main>
     <div className='about_container'>
