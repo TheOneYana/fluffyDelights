@@ -1,7 +1,6 @@
 import React from 'react'
 import {Routes, Route, useLocation} from 'react-router-dom';
 import { Error, Register, OurClients,Available} from "../pages";
-import {AnimatePresence} from "framer-motion/dist/framer-motion"; ;
 const LazyAbout = React.lazy(()=> import("../pages/About"));
 const LazyLanding = React.lazy(()=> import("../pages/Landing"));
 const LazyGallery = React.lazy(()=> import("../pages/Gallery"));
@@ -14,7 +13,7 @@ const LazySuccessRegister = React.lazy(()=> import("../pages/SuccessRegister"));
 function AnimatedRoutes () {
 const location = useLocation();
 return (
-<AnimatePresence>
+
 <Routes location = {location} key={location.pathname}>
     <Route path='/' element={<React.Suspense><LazyLanding/></React.Suspense>}/>
     <Route path='About' element={<React.Suspense><LazyAbout/></React.Suspense>}/>
@@ -28,7 +27,7 @@ return (
     <Route path='SuccessLogin' element={<React.Suspense><LazySuccessLogin/></React.Suspense>}/>
     <Route path='SuccessRegister'element={<React.Suspense><LazySuccessRegister/></React.Suspense>}/>
 </Routes>
-</AnimatePresence>
+
 )
 }
 

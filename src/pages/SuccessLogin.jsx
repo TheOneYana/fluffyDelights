@@ -1,9 +1,8 @@
-import {AnimatePresence, motion as m} from "framer-motion/dist/framer-motion"; 
 import Confetti from "react-confetti";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import catPaw from '../images/paw2.png';
-import AuthDetails from "../components/AuthDetails";
+
 
 export default function Success() {
   const [pieces, setPieces] = useState(700);
@@ -20,7 +19,7 @@ export default function Success() {
     stopConfetti();
   }, []);
   return (
-    <m.main
+    <main
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -35,7 +34,7 @@ export default function Success() {
       </div>
       <Confetti gravity={0.1} width={window.innerWidth}
     height={window.innerHeight} numberOfPieces={pieces} />
-    </m.main>
+    </main>
   );
 }
 
