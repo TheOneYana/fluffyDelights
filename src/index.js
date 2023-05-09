@@ -5,9 +5,10 @@ import "./index.css";
 import App from "./App";
 import {store} from './store';
 import {Provider} from 'react-redux';
+import {hydrateRoot} from 'react-dom/client';
 
 const container = document.getElementById("root");
-const root = createRoot(container);
+const root = hydrateRoot(container, <App/>);
 
 root.render(
 <Provider store={store}>
