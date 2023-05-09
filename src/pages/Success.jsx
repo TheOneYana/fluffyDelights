@@ -28,7 +28,7 @@ export default function Success() {
         <h2 className="contact_h2">
         ✨ Thanks for the email! ✨
         </h2>
-        <h3 className="contact_h3">We will get back to you as soon as MEOWssible!</h3>
+        <h3 className="contact_h3">We will get back to you as meow as possible!</h3>
         <img className ='contact_paw' src={catPaw}/>
       
       </div>
