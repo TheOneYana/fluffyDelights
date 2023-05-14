@@ -1,6 +1,7 @@
 import kitty from '../images/Gold.png'
 import {useState, useEffect} from 'react';
 import Loading from "../components/Loading";
+import {Helmet} from 'react-helmet-async';
 
 const Error = () => {
 const [loading, setLoading] = useState(true);

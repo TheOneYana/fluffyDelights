@@ -35,7 +35,7 @@ const Wrapper = styled.div`
     max-width: 900px;
   }
   .bs, button {
-    color: rgb(74, 56, 39);
+    color: tan;
     text-decoration: none;
     text-decoration-color: rgb(36, 20, 1);
   }

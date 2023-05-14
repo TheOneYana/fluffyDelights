@@ -9,7 +9,7 @@ const ourClientsData = [
         id: 2,
         name: "Alessandra and her cat Kirby",
         statement: "Kirby has been our pride and joy. From his very first day with us he had great confidence and energy. He is well socialized and was old enough to handle the transition to our home appropriately. It's clear fluffy delights really cares for their cats and kittens, and it shows. They continued to answer our questions and be a resource for us after the adoption. 10/10 We couldn't live without Kirby!!!",
-        img: "https://i.ibb.co/VBPZgmf/C3119255-3038-4634-9688-91-E24-F98-EA5-B.jpg",
+        img: "https://i.ibb.co/NghfGYk/Alessandra-and-Kirby.jpg",
     },
     {
         id: 3,

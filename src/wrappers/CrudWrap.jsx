@@ -15,6 +15,7 @@ const CrudWrap = styled.div`
   max-width: 150px;
   margin-top: 40px;
 }
+
 /* .callCats{
   color: var(--font);
     height: 50px;
@@ -188,6 +189,7 @@ p{
 
 .availKittens{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 40px;

@@ -5,6 +5,7 @@ import CrudWrap from '../wrappers/CrudWrap';
 import paw2 from '../images/paw2.png';
 import {useState, useEffect} from 'react';
 import Loading from "../components/Loading";
+import {Helmet} from 'react-helmet-async';
 
 const Gallery = () => {
   const [loading, setLoading] = useState(true);
@@ -19,6 +20,11 @@ const Gallery = () => {
   if(total< 1){
     return (
       <CrudWrap>
+      <Helmet>
+        <title>British Shorthair cattery in Los Angeles, California</title>
+        <meta name = 'description' content = 'Images of british shorthair cats and british shorthair kittens from our cattery. Tabby british shorthair, lilact british shorthair, grey british shorthair, chocolate british shorthair, cream british shorthair'/>
+        <link rel='canonical' href='/Gallery'/>
+      </Helmet>
       <section className='cats'>
         <p>Let's call the cats!</p>
        <button className='callCats' onClick={()=> dispatch(fetchCats())}>Psspsspss</button>
