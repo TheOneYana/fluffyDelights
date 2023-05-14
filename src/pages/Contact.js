@@ -6,6 +6,7 @@ import * as Yup from 'yup';
 import { useNavigate, useParams } from "react-router-dom";
 import {useState, useEffect} from 'react';
 import Loading from "../components/Loading";
+import {Helmet} from 'react-helmet-async';
 
 const Contact = () => {
 const [loading, setLoading] = useState(true);
@@ -47,6 +48,11 @@ const formik = useFormik({
   //  }
   return (
     <ContactWrap>
+         <Helmet>
+        <title>Contact FLuffy Delights - British Shorthair cattery in Los Angeles, California</title>
+        <meta name = 'description' content = 'Contact us about british shorthair kittens'/>
+        <link rel='canonical' href='/Contact'/>
+      </Helmet>
         {loading ? (<Loading/>):(
       <main>
     <div className='container'>

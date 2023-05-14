@@ -5,6 +5,7 @@ import { useState, useEffect} from "react";
 import { auth } from "../firebaseConfig";
 import AuthDetails from "../components/AuthDetails";
 import { useNavigate, useParams } from "react-router-dom";
+import {Helmet} from 'react-helmet-async';
 
 const Register = () => {
 const [name, setName] = useState('');

@@ -14,10 +14,10 @@ width: 350px;
 height: auto;
 border: 2px solid var(--hover);
 margin: 10px;
-padding: 10px;
+padding: 20px;
 display: flex;
 flex-direction: column;
-justify-content: center;
+justify-content: start;
 align-items: center;
 }
 .name{
@@ -50,7 +50,7 @@ height: 400px;
 font-size: 24px;
 }
 .statement{
-    font-size: 22px;
+font-size: 22px;
 }
 }
 @media (min-width: 800px) and (max-width: 999px) {
@@ -65,17 +65,28 @@ align-items: flex-start;
 .clientImg{
 height: 400px;
 }
+.name{
+font-size: 24px;
+}
+.statement{
+font-size: 22px;
+}
 }
 @media (min-width: 1000px) and (max-width: 1717px) {
 .container{
 flex-direction: row;
 grid-template-columns: repeat(3, 0fr);
 }
+.name{
+font-size: 24px;
+}
+.statement{
+font-size: 22px;
+}
 }
 @media (min-width: 1718px) {
 .container{
 flex-direction: row;
-
 grid-template-columns: repeat(3, 0fr);
 padding-bottom: 40px;
 

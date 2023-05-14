@@ -7,7 +7,7 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import {useState, useEffect} from 'react';
 import Loading from "../components/Loading";
-
+import {Helmet} from 'react-helmet-async';
 
 const responsive = {
   superLargeDesktop: {
@@ -59,6 +59,11 @@ useEffect(()=>{
 }, []);
   return (
     <Wrapper>
+      <Helmet>
+        <title>British Shorthair cattery in Los Angeles, California</title>
+        <meta name = 'description' content = 'Welcome to our british shorthair cattery!'/>
+        <link rel='canonical' href='/Available'/>
+      </Helmet>
     {loading ? (<Loading/>):(
     <main className="bkg">
     <div className="container page">
@@ -70,7 +75,8 @@ useEffect(()=>{
                 Welcome to our cattery website! We are dedicated to providing
                 exceptional feline companions to loving homes. Our mission is to
                 breed healthy, well-socialized cats with excellent temperaments
-                and stunning appearances.
+                and stunning appearances. Our cattery is located in <span className="bs"> Los Angeles, California</span>
+                <span></span>
               </p>
               <p>
                 We specialize in <span className="bs"> British Shorthair</span>
