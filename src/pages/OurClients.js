@@ -13,6 +13,11 @@ setLoading(false);
 }, []);
  return (
   <OurClientsWrap>
+      <Helmet>
+        <title>Clients reviews of our British Shorthair cattery in Los Angeles, California</title>
+        <meta name = 'description' content = 'Please take a look at what our clients have to say about our cattery.'/>
+        <link rel='canonical' href='/Available'/>
+      </Helmet>
     {loading ? (<Loading/>):(
   <div className='container'>
   {client.map((c)=>  <div className='grid-item' key={c.id}>

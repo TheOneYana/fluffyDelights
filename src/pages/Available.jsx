@@ -10,11 +10,11 @@ const Available = () => {
 }
  return (
   <CrudWrap>
-       <Helmet>
-        <title>Available British Shorthair kittens</title>
-        <meta name = 'description' content = 'If we have any available british shorthair kittens, they will be displayed here. If none of the kittens are available, feel free to use CONTACT section to ask us about upcoming litters. Currently we have lilac boy and lilac girl available in ut cattery.'/>
-        <link rel='canonical' href='/Available'/>
-      </Helmet>
+    <Helmet>
+    <title>Available British Shorthair kittens</title>
+    <meta name = 'description' content = 'If we have any available british shorthair kittens, they will be displayed here. If none of the kittens are available, feel free to use CONTACT section to ask us about upcoming litters. Currently we have lilac boy and lilac girl available in ut cattery.'/>
+    <link rel='canonical' href='/Available'/>
+  </Helmet>
     <div className='availKittens'>
     {kitten.map((cat)=>  <div className='grid-item kittens' key={cat.id}>
   <p>{cat.color} {cat.sex}</p>
