@@ -13,7 +13,7 @@ const Gallery = () => {
   setTimeout(()=>{
     setLoading(false);
   }, 3000)
-  }, []);
+  });
   const dispatch = useDispatch();
   const {imgs,imgsPerPage, currentPage,total} = useSelector((store) => store.imgs);
 
