@@ -3,7 +3,6 @@ import OurClientsWrap from '../wrappers/OurClientsWrap';
 import {useState, useEffect} from 'react';
 import Loading from "../components/Loading";
 import {Helmet} from 'react-helmet-async';
-
 const OurClients = () => {
 const [loading, setLoading] = useState(true);
 useEffect(()=>{
