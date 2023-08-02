@@ -8,8 +8,7 @@ import 'react-multi-carousel/lib/styles.css';
 import {useState, useEffect} from 'react';
 import Loading from "../components/Loading";
 import {Helmet} from 'react-helmet-async';
-import main from '../images/main.webp'
-import {c7, c12, c24, c28, c29, c33, c38, cat1, cat2, cat3, cat4, cat6, cat7, cat8, cat9, cat10, cat11, cat19, kitty, basya, kb, k1,many, k2, many2, k3, k4, k5, c3, c100, c4, c, c11, c36, c31} from '../images';
+
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
@@ -69,7 +68,7 @@ useEffect(()=>{
     <main className="bkg">
     <div className="container page">
           <div className="main-img-container">
-            <img src="../images/main.webp" alt='british shorthair cat' className="main-img"/></div>
+            <img src="https://i.ibb.co/D9dDRQC/main.webp" alt='british shorthair cat' className="main-img"/></div>
           <div className="info">
             <span>
               <p>
