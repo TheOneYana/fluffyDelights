@@ -1,15 +1,17 @@
+import lilacMale from "../images/lilacMale.webp";
+import lilacFemale from "../images/lilacFemale.webp";
 const availableKittens = [
     {
         id: 1,
         color: 'Lilac',
         sex: 'Male',
-        img:'https://i.ibb.co/7vbPtj3/avail-Kitten.webp',
+        img:lilacMale,
     },    
     {
         id: 2,
         color: 'Lilac',
         sex: 'Female',
-        img:'https://i.ibb.co/CJw3Cj9/lilac-girlwebp.webp',
+        img:lilacFemale,
     },
    
 

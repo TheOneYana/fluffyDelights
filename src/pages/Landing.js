@@ -8,7 +8,8 @@ import 'react-multi-carousel/lib/styles.css';
 import {useState, useEffect} from 'react';
 import Loading from "../components/Loading";
 import {Helmet} from 'react-helmet-async';
-
+import main from '../images/main.webp'
+import {c7, c12, c24, c28, c29, c33, c38, cat1, cat2, cat3, cat4, cat6, cat7, cat8, cat9, cat10, cat11, cat19, kitty, basya, kb, k1,many, k2, many2, k3, k4, k5, c3, c100, c4, c, c11, c36, c31} from '../images';
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
@@ -68,7 +69,7 @@ useEffect(()=>{
     <main className="bkg">
     <div className="container page">
           <div className="main-img-container">
-            <img src="https://i.ibb.co/Qdhs8Qy/main-temp-1.webp" alt='british shorthair cat' className="main-img"/></div>
+            <img src={main} alt='british shorthair cat' className="main-img"/></div>
           <div className="info">
             <span>
               <p>
@@ -102,38 +103,38 @@ useEffect(()=>{
         <div className="carousel-container">
           <div className="carousel">
           <Carousel responsive={responsive} ssr={true} autoPlay={true} autoPlaySpeed={2000} keyBoardControl={true} arrows={false} infinite={true}>
-              <div><img src={"https://i.ibb.co/dj2n6vf/c11.webp"} alt='' className="carousel-image"/></div>
-              <div><img src={"https://i.ibb.co/d6fwYyS/cat8.webp"} alt='' className="carousel-image"/></div>
-              <div><img src={"https://i.ibb.co/4TdjpHG/c41.webp"} alt='' className="carousel-image"/></div>
-              <div><img src={"https://i.ibb.co/8x6873y/c.webp"} alt='' className="carousel-image"/></div>
-              <div><img src={"https://i.ibb.co/kQvMgVX/c30.webp"} alt='' className="carousel-image"/></div>
-              <div><img src={"https://i.ibb.co/Sc4DGSr/cat17.webp"} alt='' className="carousel-image"/></div>
-              <div><img src={"https://i.ibb.co/hdTqZGs/c36.webp"} alt='' className="carousel-image"/></div>
-              <div><img src={"https://i.ibb.co/C2Lpy07/c35.webp"} alt='' className="carousel-image"/></div>
-              <div><img src={"https://i.ibb.co/RQjM9PX/cat.webp"} alt='' className="carousel-image"/></div>
-              <div><img src={"https://i.ibb.co/MCv3K5K/c40.webp"} alt='' className="carousel-image"/></div>
-              <div><img src={"https://i.ibb.co/TDfptxg/c29.webp"} alt='' className="carousel-image"/></div>
-              <div><img src={"https://i.ibb.co/TgLgdrk/c9.webp"} alt='' className="carousel-image"/></div>
-              <div><img src={"https://i.ibb.co/MMGj3B7/c2.webp"} alt='' className="carousel-image"/></div>
-              <div><img src={"https://i.ibb.co/zhH5HLh/c4.webp"} alt='' className="carousel-image"/></div>
-              <div><img src={"https://i.ibb.co/hWHBdJv/c18.webp"} alt='' className="carousel-image"/></div>
-              <div><img src={"https://i.ibb.co/TvThqqQ/cat9.webp"} alt='' className="carousel-image"/></div>
-              <div><img src={"https://i.ibb.co/HKFsBc1/cat4.webp"} alt='' className="carousel-image"/></div>
-              <div><img src={"https://i.ibb.co/L6r6Rd1/cat1.webp"} alt='' className="carousel-image"/></div>
-              <div><img src={"https://i.ibb.co/LYkYZ3t/IMG-8318.webp"} alt='' className="carousel-image"/></div>
-              <div><img src={"https://i.ibb.co/VV6xtTV/IMG-290-A1-B353324-3.webp"} alt='' className="carousel-image"/></div>
-              <div><img src={"https://i.ibb.co/NYcYrm5/IMG-0620.webp"} alt='' className="carousel-image"/></div>
-              <div><img src={"https://i.ibb.co/LtHwGsW/EB0-F599-C-CEBC-4-A8-D-A5-A0-3-BE3-E0568259.webp"} alt='' className="carousel-image"/></div>
-              <div><img src={"https://i.ibb.co/8jjzPfW/cat16.webp"} alt='' className="carousel-image"/></div>
-              <div><img src={"https://i.ibb.co/vxZT68k/cat12.webp"} alt='' className="carousel-image"/></div>
-              <div><img src={"https://i.ibb.co/jLbrgtg/c34.webp"} alt='' className="carousel-image"/></div>
-              <div><img src={"https://i.ibb.co/b5MfhYT/cat18.webp"} alt='' className="carousel-image"/></div>
-              <div><img src={"https://i.ibb.co/Ry67cRh/IMG-8274.webp"} alt='' className="carousel-image"/></div>
-              <div><img src={"https://i.ibb.co/mhPjfS0/IMG-290-A1-B353324-7.webp"} alt='' className="carousel-image"/></div>
-              <div><img src={"https://i.ibb.co/kygn4gW/cat13.webp"} alt='' className="carousel-image"/></div>
-              <div><img src={"https://i.ibb.co/F3XJTKC/cat3.webp"} alt='' className="carousel-image"/></div>
-              <div><img src={"https://i.ibb.co/TKdw4MQ/IMG-290-A1-B353324-5.webp"} alt='' className="carousel-image"/></div>
-              <div><img src={"https://i.ibb.co/nLKWW11/c39.webp"} alt='' className="carousel-image"/></div>
+              <div><img src={c} alt='' className="carousel-image"/></div>
+              <div><img src={c100} alt='' className="carousel-image"/></div>
+              <div><img src={c11} alt='' className="carousel-image"/></div>
+              <div><img src={c12} alt='' className="carousel-image"/></div>
+              <div><img src={c24} alt='' className="carousel-image"/></div>
+              <div><img src={c28} alt='' className="carousel-image"/></div>
+              <div><img src={c29} alt='' className="carousel-image"/></div>
+              <div><img src={c3} alt='' className="carousel-image"/></div>
+              <div><img src={c31} alt='' className="carousel-image"/></div>
+              <div><img src={basya} alt='' className="carousel-image"/></div>
+              <div><img src={c36} alt='' className="carousel-image"/></div>
+              <div><img src={c38} alt='' className="carousel-image"/></div>
+              <div><img src={cat1} alt='' className="carousel-image"/></div>
+              <div><img src={cat10} alt='' className="carousel-image"/></div>
+              <div><img src={cat11} alt='' className="carousel-image"/></div>
+              <div><img src={cat19} alt='' className="carousel-image"/></div>
+              <div><img src={cat2} alt='' className="carousel-image"/></div>
+              <div><img src={cat3} alt='' className="carousel-image"/></div>
+              <div><img src={cat4} alt='' className="carousel-image"/></div>
+              <div><img src={cat6} alt='' className="carousel-image"/></div>
+              <div><img src={cat7} alt='' className="carousel-image"/></div>
+              <div><img src={cat8} alt='' className="carousel-image"/></div>
+              <div><img src={cat9} alt='' className="carousel-image"/></div>
+              <div><img src={k1} alt='' className="carousel-image"/></div>
+              <div><img src={k3} alt='' className="carousel-image"/></div>
+              <div><img src={kb} alt='' className="carousel-image"/></div>
+              <div><img src={k4} alt='' className="carousel-image"/></div>
+              <div><img src={kitty} alt='' className="carousel-image"/></div>
+              <div><img src={k5} alt='' className="carousel-image"/></div>
+              <div><img src={many} alt='' className="carousel-image"/></div>
+              <div><img src={c4} alt='' className="carousel-image"/></div>
+              <div><img src={c7} alt='' className="carousel-image"/></div>
           </Carousel>
           </div>
         </div>
