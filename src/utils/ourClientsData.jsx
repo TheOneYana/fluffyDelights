@@ -16,7 +16,7 @@ const ourClientsData = [
         id: 3,
         name: "Valerie and her cat Winston",
         statement: "I had a fantastic experience with the cattery. The staff there were incredibly kind and helpful throughout the adoption process, which was both fast and straightforward. It was a wonderful experience, and I'm grateful to the team for all their help. I consider myself very fortunate to have found Many, who is undoubtedly the best cat in the world. I cannot imagine my life without him now.",
-        img: "https://i.ibb.co/TKJYz7g/Valery-and-Winston.jpg",
+        img: "https://i.ibb.co/ydP8V2C/Valery-and-Winston.webp",
     },
     {
         id: 4,
