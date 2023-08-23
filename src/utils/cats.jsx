@@ -77,7 +77,7 @@ const cats = [
 },
 {  id: "17",
     name: 'Babies',
-    img: "https://i.ibb.co/qCvLYst/c2.webp",
+    img: "https://i.ibb.co/rMCh87v/lilac-Male.webp",
 },
 {  id: "18",
     name: 'Babies',
