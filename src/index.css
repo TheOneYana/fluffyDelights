@@ -158,6 +158,9 @@ align-items:center;
     justify-content: space-around;
     align-items: center;
   }
+  .lazyloading{
+    height: 100vh;
+  }
 
 }
 @media (min-width: 800px) and (max-width: 1717px) {
@@ -184,6 +187,9 @@ align-items:center;
     font-size: 27px;
     text-align: center;
   
+  }
+  .lazyloading{
+    height: 100vh;
   }
 
 }

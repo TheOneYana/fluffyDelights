@@ -1,10 +1,10 @@
 
 import { createSlice, createAsyncThunk} from '@reduxjs/toolkit';
-
+import links from "../../utils/links";
 
 
 const initialState = {
-    currentPage: null,
+    currentPage: links[0],
 }
 
 const contactSlice = createSlice({
