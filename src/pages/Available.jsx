@@ -27,7 +27,9 @@ setTimeout(()=>{
   </Helmet>
   {loading ? (<Loading/>):(
    <div className='availContainer'><main className='availText'>We are expecting our next litter of lilac and chocolate kittens in a few days(beginning of May 2024), feel free to follow us on <a href = "https://www.instagram.com/roxybarcelona2019?igsh=MmVlMjlkMTBhMg%3D%3D&utm_source=qr">instagram</a> for more updates or reach out to Alena about kitten reservation at +1 (786) 477-9926. Thank you! </main>
-   <img src={paw} className='availPaw'/></div>
+   <img src={paw} className='availPaw'/>
+   </div>
+   
  )}
   </CrudWrap>
     )

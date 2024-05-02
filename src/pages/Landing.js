@@ -17,11 +17,11 @@ const responsive = {
   },
   desktop: {
     breakpoint: { max: 2999, min: 2000 },
-    items: 7
+    items: 8
   },
   desktop2: {
     breakpoint: { max: 1999, min: 1824 },
-    items: 6
+    items: 7
   },
   tablet: {
     breakpoint: { max: 1823, min: 1490 },
@@ -95,10 +95,10 @@ useEffect(()=>{
             </span>
           </div>
         </div>
-        <div className="register">
+        {/* <div className="register">
           <h3 className="registerorlogin">Would you like to Register or Login?</h3>
           <Link to='/Register' className="button"><button><img className='pawicon' alt='paw' src={pawicon}/>Register / Login<img className='pawicon' alt='paw'src={pawicon}/></button></Link>
-        </div>
+        </div> */}
         <div className="carousel-container">
           <div className="carousel">
           <Carousel responsive={responsive} ssr={true} autoPlay={true} autoPlaySpeed={2000} keyBoardControl={true} arrows={false} infinite={true}>

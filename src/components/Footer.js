@@ -4,7 +4,7 @@ const Footer = () => {
 return (
     <Wrapper>
         <footer>
-    <h5> © 2023 Designed and Developed by Uliana Sarkisova </h5>
+    <h5> © 2024 Designed and Developed by Uliana Sarkisova </h5>
     </footer>
     </Wrapper>
 )

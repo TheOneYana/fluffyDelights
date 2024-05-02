@@ -268,8 +268,8 @@ button:active {
       margin-top: -8px;
     }
     .carousel {
-      margin: 15px 0 70px 30px;
-  height: 270px;
+      margin: 75px 0 70px 30px;
+      height: 270px;
   }
 
   .carousel-image {
@@ -287,14 +287,14 @@ button:active {
       font-size: 24px;
       align-items: center;
       height: 500px;
-      width:800px
+      width: 800px
     }
     .paw {
       margin-top: -2px;
     }
     .carousel {
-      margin: 15px 0 70px 10px;
-  height: 270px;
+      margin: 55px 0 70px 10px;
+      height: 290px;
   }
 
   .carousel-image {
@@ -306,7 +306,7 @@ button:active {
   }
   @media (min-width: 1190px) and (max-width: 1350px){
     .carousel{
-      margin: 15px 0 70px 55px;
+      margin: 75px 0 70px 55px;
     }
     .info{
       height: 500px;
@@ -314,7 +314,7 @@ button:active {
   }
   @media (min-width: 1351px) and (max-width: 1600px){
     .carousel{
-      margin: 15px 0 70px 50px;
+      margin: 75px 0 70px 50px;
     }
     .info{
       height: 500px;
@@ -322,7 +322,7 @@ button:active {
   }
   @media (min-width: 1601px) and (max-width: 1723px){
     .carousel{
-      margin: 15px 0 70px 60px;
+      margin: 75px 0 70px 60px;
     }
     .info{
      height: 500px;
@@ -364,7 +364,7 @@ button:active {
       margin-left: 40%;
     }
     .carousel{
-      margin: 15px 0 70px 70px;
+      margin: 75px 0 70px 70px;
     }
     .carousel-image {
     width: 250px;
