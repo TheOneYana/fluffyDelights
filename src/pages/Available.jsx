@@ -1,9 +1,10 @@
-import kitten from '../utils/availKittensData';
+// import kitten from '../utils/availKittensData';
 import CrudWrap from '../wrappers/CrudWrap';
 import { useNavigate, useParams } from "react-router-dom";
 import {Helmet} from 'react-helmet-async';
 import { useState, useEffect } from 'react';
 import Loading from '../components/Loading';
+import paw from '../images/paw2.png'
 
 const Available = () => {
 const [loading, setLoading] = useState(true);
@@ -25,16 +26,8 @@ setTimeout(()=>{
     <link rel='canonical' href='/Available'/>
   </Helmet>
   {loading ? (<Loading/>):(
-    <div className='availKittens'>
-    {kitten.map((cat)=>  <div className='grid-item kittens' key={cat.id}>
-  <p>{cat.color} {cat.sex}</p>
-  <img className='kittenImg'src={cat.img} alt='cat'/>
-  {/* <p>{avail}</p> */}
-  <button className='crudBtn' onClick={()=> ask()}>Ask question</button>
-  </div>
-  )
-}
-</div>
+   <div className='availContainer'><main className='availText'>We are expecting our next litter of lilac and chocolate kittens in a few days(beginning of May 2024), feel free to follow us on <a href = "https://www.instagram.com/roxybarcelona2019?igsh=MmVlMjlkMTBhMg%3D%3D&utm_source=qr">instagram</a> for more updates or reach out to Alena about kitten reservation at +1 (786) 477-9926. Thank you! </main>
+   <img src={paw} className='availPaw'/></div>
  )}
   </CrudWrap>
     )
@@ -42,3 +35,11 @@ setTimeout(()=>{
 
 
 export default Available;
+
+{/* <div className='availKittens'>
+{kitten.map((cat)=>  <div className='grid-item kittens' key={cat.id}>
+<p>{cat.color} {cat.sex}</p>
+<img className='kittenImg'src={cat.img} alt='cat'/>
+{/* <p>{avail}</p>
+<button className='crudBtn' onClick={()=> ask()}>Ask question</button>
+</div> */}
