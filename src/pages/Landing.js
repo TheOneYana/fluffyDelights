@@ -68,7 +68,7 @@ useEffect(()=>{
     <main className="bkg">
     <div className="container page">
           <div className="main-img-container">
-            <img src="https://i.ibb.co/ZcZRkH2/main.webp" alt='british shorthair cat' className="main-img"/></div>
+            <img src="https://i.ibb.co/0c1C873/IMG-3188-copy.webp" alt='british shorthair kittens' className="main-img"/></div>
           <div className="info">
             <span>
               <p>
