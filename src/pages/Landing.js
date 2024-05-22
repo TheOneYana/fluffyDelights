@@ -105,7 +105,7 @@ useEffect(()=>{
               <div><img src="https://i.ibb.co/xjzSZ8p/Facetune-20-04-2023-16-00-06-copy.webp" alt='' className="carousel-image"/></div>
               <div><img src="https://i.ibb.co/0c1C873/IMG-3188-copy.webp" alt='' className="carousel-image"/></div>
               <div><img src="https://i.ibb.co/VBmDnhv/c7.webp"alt='' className="carousel-image"/></div>
-              <div><img src="https://ibb.co/jLmcR74" alt='' className="carousel-image"/></div>
+              <div><img src="https://i.ibb.co/8jqWcF8/Facetune-04-05-2023-00-40-33.webp" alt='' className="carousel-image"/></div>
               <div><img src="https://i.ibb.co/wYXcnzf/c31.webp" alt='' className="carousel-image"/></div>
               <div><img src="https://i.ibb.co/KynrN0j/cat3.webp" alt='' className="carousel-image"/></div>
               <div><img src="https://i.ibb.co/fYFKd7f/IMG-8567.webp" alt='' className="carousel-image"/></div>
