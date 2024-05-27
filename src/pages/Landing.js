@@ -61,8 +61,8 @@ useEffect(()=>{
     <Wrapper>
       <Helmet>
         <title>British Shorthair cattery in Los Angeles, California</title>
-        <meta name = 'description' content = 'Welcome to our british shorthair cattery!'/>
-        <link rel='canonical' href='/Available'/>
+        <meta name = 'description' content = 'British Shorthair kittens Los Angeles'/>
+        <link rel='canonical' href='/Landing'/>
       </Helmet>
     {loading ? (<Loading/>):(
     <main className="bkg">
