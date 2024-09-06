@@ -1,6 +1,39 @@
 import styled from "styled-components";
 
 const CrudWrap = styled.div`
+.availText {
+  background-color: #fff8e1;          /* Soft, light yellow background to contrast with beige */
+  color: #4e342e;                     /* Deep brown color for the text */
+  font-size: 20px;                    /* Adjust font size for readability */
+  line-height: 1.6;                   /* Better readability with increased line spacing */
+  padding: 20px;                      /* Padding inside the text box */
+  border-radius: 12px;                /* Smooth, rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
+  border: 1px solid #d7ccc8;          /* Soft, thin border that matches the overall theme */
+  max-width: 800px;                   /* Optional: limit the width of the text box */
+  margin: 20px auto;                  /* Center the text box horizontally with some spacing */
+  text-align: center;                 /* Center-align the text */
+}
+
+.availText a {
+  color: #c71585;                     /* Highlight the link with magenta */
+  font-weight: bold;                  /* Make the link bold to stand out */
+  text-decoration: none;              /* Remove underline from the link */
+}
+
+.availText a:hover {
+  text-decoration: underline;         /* Add underline on hover to indicate interactivity */
+}
+
+.availContainer{
+  display: flex;
+  flex-direction: column; 
+  align-items: center;      
+  justify-content: center; 
+  padding: 20px;
+  gap: 20px; 
+  
+}
 
 .cats {
   display: flex;
@@ -12,8 +45,8 @@ const CrudWrap = styled.div`
   height: 500px;
 }
 .paw {
-  max-width: 150px;
-  margin-top: 40px;
+  max-width: 175px;
+  margin-bottom: 25px;
 }
 
 /* .callCats{
@@ -39,15 +72,15 @@ const CrudWrap = styled.div`
 .kittensCrud{
   font-size: 16px;
   font-weight: bolder;
-  position: absolute;
+  position: relative;
   z-index: 2;
-  padding: 40px 0 15px 0;
+  padding: 0px 0 5px 0;
   text-align: center;
   width: 100%;
   min-height: 100%;
   display: grid;
   grid-template-columns: repeat(2, 0fr);
-  grid-template-rows: repeat(4, 0fr);
+  grid-template-rows: repeat(3, 0fr);
   gap:0 5px;
   justify-content: center;
   z-index: 0;
@@ -62,7 +95,7 @@ const CrudWrap = styled.div`
   width: 170px;
   height: 220px;
   box-shadow: 5px 5px 5px rgb(77, 51, 31); 
-  margin: 30px 0 100px 0;
+  margin: 0px 0 10px 0;
   }
 .crudBtn {
   color: var(--font);
@@ -207,7 +240,7 @@ p{
  font-size: 21px;
   }
   .kittensCrud{
-  padding: 15px 0 15px 0;
+  padding: 15px 0 5px 0;
   gap:5px 30px;
   margin-top: 30px;
 
@@ -231,7 +264,7 @@ p{
   height: 220px;
   }
   .kittensCrud{
-  padding: 0px 0 15px 0;
+  padding: 0px 0 5px 0;
   gap:5px 30px;
   margin-top: 40px;
 }
@@ -260,7 +293,7 @@ p{
  margin-bottom: 110px;
   }
   .kittensCrud{
-  padding: 15px 0 15px 0;
+  padding: 15px 0 5px 0;
   gap:5px 30px;
   margin-top: 30px;
   grid-template-columns: repeat(3, 0fr);
@@ -292,7 +325,7 @@ p{
  margin-bottom: 110px;
   }
   .kittensCrud{
-  padding: 15px 0 15px 0;
+  padding: 15px 0 5px 0;
   gap:5px 30px;
   margin-top: 30px;
   grid-template-columns: repeat(4, 0fr);
@@ -322,16 +355,16 @@ p{
   font-size: 24px;
 }
 .kittensCrud{
-  position: absolute;
+  position: relative;
   z-index: 2;
-  padding: 45px 0 45px 0;
+  padding: 45px 0 5px 0;
   text-align: center;
   width: 100%;
   min-height: 100%;
   display: grid;
   grid-template-columns: repeat(4, 0fr);
   grid-template-rows: repeat(4, 0fr);
-  gap: 20px 20px;
+  gap: 0px 5px;
   justify-content: center;
   z-index: 0;
 
@@ -343,9 +376,9 @@ p{
   justify-content: center;
   align-items: center;
   width: 320px;
-  height: 320px;
+  height: 350px;
   box-shadow: 5px 5px 5px rgb(77, 51, 31); 
-  margin: 40px 0 150px 0;
+  margin: 20px 0 50px 0;
   }
 
 p{
@@ -366,6 +399,9 @@ p{
     margin: 15px 7px 7px 7px;
     cursor: pointer;
     text-decoration-color: var(--font);
+
+
+    
 }
 .active{
   height: 50px;

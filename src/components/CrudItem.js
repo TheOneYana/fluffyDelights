@@ -8,10 +8,10 @@ const CrudItem = ({id, img, name, avail}) => {
   return (
     <CrudWrap>
       <div className='grid-item' key={id}>
-      <p>{name}</p>
+      {/* <p>{name}</p> */}
       <img className='kittenImg'src={img} alt='cat'/>
       {/* <p>{avail}</p> */}
-      <button className='crudBtn' onClick={()=> dispatch(shooCats(id))}>Send home</button>
+      {/* <button className='crudBtn' onClick={()=> dispatch(shooCats(id))}>Send home</button> */}
       </div>
       </CrudWrap>)}
 
