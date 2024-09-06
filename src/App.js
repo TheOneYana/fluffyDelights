@@ -2,14 +2,15 @@
 import React, { useEffect } from 'react'; 
 import { BrowserRouter} from 'react-router-dom';
 import Main from './components/Main';
-import { initGA, logPageView } from './analytics';
+// import ReactGA from 'react-ga4';
+
 
 function App() {
-  useEffect(() => {
-    initGA();
-    logPageView(); // Track page view when the app is loaded
-  }, []);
-
+// useEffect(() => {
+//   ReactGA.initialize('G-V2ELZY2KFC');
+//   // Send pageview with a custom path
+//   ReactGA.send({ hitType: "pageview", page: "/landingpage", title: "Landing Page" });
+// }, [])
   return (
     <BrowserRouter>
     <Main/>

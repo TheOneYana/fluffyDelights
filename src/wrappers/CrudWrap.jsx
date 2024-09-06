@@ -45,7 +45,7 @@ const CrudWrap = styled.div`
   height: 500px;
 }
 .paw {
-  max-width: 175px;
+  max-width: 145px;
   margin-bottom: 25px;
 }
 

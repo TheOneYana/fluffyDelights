@@ -5,16 +5,9 @@ import {Helmet} from 'react-helmet-async';
 import { useState, useEffect } from 'react';
 import Loading from '../components/Loading';
 import paw from '../images/paw2.png'
-import { logEvent } from '../analytics';
+import ReactGA from 'react-ga4';
 
-const ClickCounter = () => {
-  const [clickCount, setClickCount] = useState(0);
 
-  const handleClick = () => {
-    setClickCount(clickCount + 1);
-    // Log the click event in Google Analytics
-    logEvent('Button', 'Click', 'Click Counter Button');
-  }};
 const Available = () => {
 const [loading, setLoading] = useState(true);
 useEffect(()=>{
@@ -26,6 +19,21 @@ setTimeout(()=>{
   const ask =()=>{
     navigate({pathname: '/contact'})
 }
+// const handleClick = (platform) => {
+//   ReactGA.event({
+//       category: 'Social Links',
+//       action: 'Click',
+//       label: platform,
+//   });
+// };
+const handleInstagramClick = () => {
+  ReactGA.event({
+    category: 'Social Links',        // Group all social media links together
+    action: 'Click',                 // The action being taken
+    label: 'Instagram Link',         // Specify this is for the Instagram link
+  });
+};
+
  return (
   <CrudWrap>
     <Helmet>
@@ -43,7 +51,9 @@ setTimeout(()=>{
   href = "https://www.instagram.com/roxybarcelona2019?igsh=MmVlMjlkMTBhMg%3D%3D&utm_source=qr" 
   style={{color:"#C71585"}} 
   // onClick={handleClick}
-  onClick={() => logEvent('Link', 'Click', 'Instagram Link')}> instagram</a> for more updates or reach out to Alena about kitten reservation at +1 (786) 477-9926. Thank you! </main>
+  onClick={handleInstagramClick}
+  target="_blank"
+  rel="noopener noreferrer"> instagram</a> for more updates or reach out to Alena about kitten reservation at +1 (786) 477-9926. Thank you! </main>
 <div className='kittensCrud'>
 {kitten.map((cat)=>  <div className='grid-item kittens' key={cat.id}>
 {/* <p>{cat.color}</p> */}
