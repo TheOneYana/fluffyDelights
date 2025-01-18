@@ -46,22 +46,15 @@ const handleInstagramClick = () => {
   (<Loading/>
   ):(
    <div className='availContainer'>
-    <main className='availText'>We currently have 1 boy and 1 girl golden chinchilla british shorthair kittens available, feel free to follow us on 
+    <main className='availText'>We don't have available kittens right now, but feel free to follow us on 
      <a 
   href = "https://www.instagram.com/roxybarcelona2019?igsh=MmVlMjlkMTBhMg%3D%3D&utm_source=qr" 
   style={{color:"#C71585"}} 
   // onClick={handleClick}
   onClick={handleInstagramClick}
   target="_blank"
-  rel="noopener noreferrer"> instagram</a> for more updates or reach out to Alena about kitten reservation at +1 (786) 477-9926. Thank you! </main>
-<div className='kittensCrud'>
-{kitten.map((cat)=>  <div className='grid-item kittens' key={cat.id}>
-{/* <p>{cat.color}</p> */}
-<img className='kittenImg'src={cat.img} alt='cat'/>
-{/* <button className='crudBtn' onClick={()=> ask()}>Ask question</button> */}
-</div>)}
+  rel="noopener noreferrer"> instagram</a> for more updates. Thank you! </main>
 
-</div>
 <img src={paw} className='paw'/>
 </div>
    
